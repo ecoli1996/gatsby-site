@@ -1,6 +1,7 @@
 require(`dotenv`).config({
   path: `.env`,
 })
+const path = require(`path`)
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
@@ -9,6 +10,14 @@ module.exports = {
     siteTitleAlt: `Minimal Blog - Gatsby Theme`,
   },
   plugins: [
+    `gatsby-plugin-fontawesome-css`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: path.join(__dirname, `src`, `assets`),
+      },
+    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
@@ -16,7 +25,7 @@ module.exports = {
         navigation: [
           {
             title: `Blog`,
-            slug: `/blog`,
+            slug: `/tags`,
           },
           {
             title: `About`,
@@ -25,12 +34,8 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `GitHub`,
+            url: `https://github.com/ecoli1996`,
           },
         ],
       },
