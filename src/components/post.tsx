@@ -5,7 +5,7 @@ import React from "react"
 import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout"
 import ItemTags from "@lekoarts/gatsby-theme-minimal-blog/src/components/item-tags"
 import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo"
-import moment from 'moment'
+import { getDate } from "../functions/getDate"
 
 type PostProps = {
   data: {
@@ -45,7 +45,7 @@ const Post = ({ data: { post } }: PostProps) => (
     />
     <Heading variant="styles.h2">{post.title}</Heading>
     <p sx={{ color: `secondary`, mt: 3, a: { color: `secondary` }, fontSize: [1, 1, 2] }}>
-      {moment(new Date(post.date)).format('LL')}
+      {getDate(post.date)}
       {post.tags && (
         <React.Fragment>
           {` — `}

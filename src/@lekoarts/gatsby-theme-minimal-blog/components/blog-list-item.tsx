@@ -4,7 +4,7 @@ import { jsx, Link as TLink } from "theme-ui"
 import { Box } from "@theme-ui/components"
 import { Link } from "gatsby"
 import ItemTags from "@lekoarts/gatsby-theme-minimal-blog/src/components/item-tags"
-import moment from 'moment'
+import { getDate } from "../../../functions/getDate"
 
 type BlogListItemProps = {
   post: {
@@ -28,7 +28,7 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
       {post.title}
     </TLink>
     <p sx={{ color: `secondary`, mt: 1, a: { color: `secondary` }, fontSize: [1, 1, 2] }}>
-      <time>{moment(new Date(post.date)).format('LL')}</time>
+      {getDate(post.date)}
       {post.tags && showTags && (
         <React.Fragment>
           {` — `}
