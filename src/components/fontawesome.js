@@ -1,5 +1,6 @@
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import {
+    faCarSide,
     faGlassCheers,
     faHiking,
     faHotel,
@@ -16,6 +17,7 @@ import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 config.autoAddCss = false;
 
 library.add(
+    faCarSide,
     faGlassCheers,
     faHiking,
     faHotel,
