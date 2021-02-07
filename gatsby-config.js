@@ -7,8 +7,11 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
+    author: `Elaina Cole`,
+    siteDescription: `A blog about Elaina's adventures`,
     siteTitle: `Elaina`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Elaina - Melted Boundary`,
+    siteUrl: `http://melted-boundary.surge.sh`
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
@@ -51,9 +54,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Elaina - melted-boundary`,
+        short_name: `melted-boundary`,
+        description: `A blog about Elaina's adventures.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
