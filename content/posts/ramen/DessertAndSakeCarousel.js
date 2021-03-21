@@ -6,10 +6,6 @@ function DessertAndSakeCarousel() {
   const castella = require('./castella.jpg');
   const sake = require('./nigori-sake.jpg');
   const props = {
-    slideHeight: "650px",
-    slideWidth: "488px",
-    initialSlideWidth: 488,
-    initialSlideHeight: 650,
     enableKeyboardControls: true,
     dragging: true,
     swiping: true,
