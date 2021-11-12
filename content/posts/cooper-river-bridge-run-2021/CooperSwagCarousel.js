@@ -1,7 +1,7 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
 
-function SwagCarousel() {
+function CooperSwagCarousel() {
   const swag1 = require('./medal.jpg');
   const swag2 = require('./shirt.jpg');
   return (
@@ -19,4 +19,4 @@ function SwagCarousel() {
   )
 }
 
-export default SwagCarousel
+export default CooperSwagCarousel
