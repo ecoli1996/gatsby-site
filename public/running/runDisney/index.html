@@ -1,0 +1,528 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.f628065b851287e306e5.css">@font-face{font-family:IBM Plex Sans;font-style:normal;font-display:swap;font-weight:100;src:local("IBM Plex Sans Thin "),local("IBM Plex Sans-Thin"),url(/static/ibm-plex-sans-latin-100-245539db8ee56425757ef728eda8194e.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-100-9a582f3a304f421eca4027517706843c.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:italic;font-display:swap;font-weight:100;src:local("IBM Plex Sans Thin italic"),local("IBM Plex Sans-Thinitalic"),url(/static/ibm-plex-sans-latin-100italic-3c34cf080b38f5fb1d4c59ffa45b3967.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-100italic-1ea7c5d21b5956b602bdf9656cfb353f.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:normal;font-display:swap;font-weight:200;src:local("IBM Plex Sans Extra Light "),local("IBM Plex Sans-Extra Light"),url(/static/ibm-plex-sans-latin-200-bf72c8412ab06c393f52efc5beb26ea7.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-200-67524c36348a323f78f2845e3aafc2d4.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:italic;font-display:swap;font-weight:200;src:local("IBM Plex Sans Extra Light italic"),local("IBM Plex Sans-Extra Lightitalic"),url(/static/ibm-plex-sans-latin-200italic-bbc2d55223638ce450424a917e1104b2.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-200italic-52df25607ec284ca361ae50ba24b3580.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:normal;font-display:swap;font-weight:300;src:local("IBM Plex Sans Light "),local("IBM Plex Sans-Light"),url(/static/ibm-plex-sans-latin-300-9e1c48af24191f6ea8aede14957c5d01.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-300-10bb6a0ae6dc8000d999ab622a45e281.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:italic;font-display:swap;font-weight:300;src:local("IBM Plex Sans Light italic"),local("IBM Plex Sans-Lightitalic"),url(/static/ibm-plex-sans-latin-300italic-c76f2ab53673e964b6e6734c1c455761.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-300italic-d3566d5bb4f31d86bfb9fda09563b416.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:normal;font-display:swap;font-weight:400;src:local("IBM Plex Sans Regular "),local("IBM Plex Sans-Regular"),url(/static/ibm-plex-sans-latin-400-263d6267533501f58c33b12b382e3abb.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-400-a2c56f946488a9a267ba6ba21471a217.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:italic;font-display:swap;font-weight:400;src:local("IBM Plex Sans Regular italic"),local("IBM Plex Sans-Regularitalic"),url(/static/ibm-plex-sans-latin-400italic-89a93a1bdde48c7bb104150de88affce.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-400italic-272f86114c980c52c131dfc3b4ae3276.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:normal;font-display:swap;font-weight:500;src:local("IBM Plex Sans Medium "),local("IBM Plex Sans-Medium"),url(/static/ibm-plex-sans-latin-500-0866c24487514ad726738fb24f8e015b.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-500-f6d5c5d5b849796d6a8f5a2953b60753.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:italic;font-display:swap;font-weight:500;src:local("IBM Plex Sans Medium italic"),local("IBM Plex Sans-Mediumitalic"),url(/static/ibm-plex-sans-latin-500italic-ffd12d59339823b8cf53b9f99b47d87c.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-500italic-ccd41bd1a5bfa8bad2cd8d35fdaeb3d1.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:normal;font-display:swap;font-weight:600;src:local("IBM Plex Sans SemiBold "),local("IBM Plex Sans-SemiBold"),url(/static/ibm-plex-sans-latin-600-7852d4dc26ef44df58e23dc0b9722d6f.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-600-337b16517a230dc830b84dc6e6167b68.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:italic;font-display:swap;font-weight:600;src:local("IBM Plex Sans SemiBold italic"),local("IBM Plex Sans-SemiBolditalic"),url(/static/ibm-plex-sans-latin-600italic-17e5379fd9a99b9bcb26ea983f391b6a.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-600italic-6f4ba6aa87fa99d5bc2b90a7b40a0ded.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:normal;font-display:swap;font-weight:700;src:local("IBM Plex Sans Bold "),local("IBM Plex Sans-Bold"),url(/static/ibm-plex-sans-latin-700-c9983d3d04f3ed6c2eafee1db1d24e06.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-700-b8809d619a33eb825b0450281ff752e7.woff) format("woff")}@font-face{font-family:IBM Plex Sans;font-style:italic;font-display:swap;font-weight:700;src:local("IBM Plex Sans Bold italic"),local("IBM Plex Sans-Bolditalic"),url(/static/ibm-plex-sans-latin-700italic-02954beec9e742bb1f3ae27b7e7cb71f.woff2) format("woff2"),url(/static/ibm-plex-sans-latin-700italic-72e9af409ddafc63a5dd380e34758560.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.24.63"/><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="alternate" type="application/rss+xml" title="Minimal Blog - @lekoarts/gatsby-theme-minimal-blog" href="/rss.xml"/><title data-react-helmet="true">The runDisney Roadmap: Preparing for Your First runDisney Race | Elaina</title><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><meta data-react-helmet="true" name="google-site-verification" content="9yjcD4nX0hOnqGOz_49qqNPLsE1TS5-DdGjZdFK9thI"/><meta data-react-helmet="true" name="description" content="Back in January 2020, I ran my first half marathon during the Walt Disney World Marathon Weekend along with one of my friends, while my…"/><meta data-react-helmet="true" name="image" content="https://arrayoflight.gatsbyjs.io/banner.jpg"/><meta data-react-helmet="true" property="og:title" content="The runDisney Roadmap: Preparing for Your First runDisney Race"/><meta data-react-helmet="true" property="og:url" content="https://arrayoflight.gatsbyjs.io/running/runDisney"/><meta data-react-helmet="true" property="og:description" content="Back in January 2020, I ran my first half marathon during the Walt Disney World Marathon Weekend along with one of my friends, while my…"/><meta data-react-helmet="true" property="og:image" content="https://arrayoflight.gatsbyjs.io/banner.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:image:alt" content="Back in January 2020, I ran my first half marathon during the Walt Disney World Marathon Weekend along with one of my friends, while my…"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:title" content="The runDisney Roadmap: Preparing for Your First runDisney Race"/><meta data-react-helmet="true" name="twitter:url" content="https://arrayoflight.gatsbyjs.io/running/runDisney"/><meta data-react-helmet="true" name="twitter:description" content="Back in January 2020, I ran my first half marathon during the Walt Disney World Marathon Weekend along with one of my friends, while my…"/><meta data-react-helmet="true" name="twitter:image" content="https://arrayoflight.gatsbyjs.io/banner.jpg"/><meta data-react-helmet="true" name="twitter:image:alt" content="Back in January 2020, I ran my first half marathon during the Walt Disney World Marathon Weekend along with one of my friends, while my…"/><meta data-react-helmet="true" name="twitter:creator" content="Elaina Cole"/><meta data-react-helmet="true" name="gatsby-theme" content="@lekoarts/gatsby-theme-minimal-blog"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#6B46C1"/><link rel="apple-touch-icon" sizes="192x192" href="/android-chrome-192x192.png"/><link rel="apple-touch-icon" sizes="512x512" href="/android-chrome-512x512.png"/><link as="script" rel="preload" href="/webpack-runtime-e62870308bfeb59cefff.js"/><link as="script" rel="preload" href="/framework-0844017b59162e95f371.js"/><link as="script" rel="preload" href="/cb1608f2-8e1448abb65b3325a332.js"/><link as="script" rel="preload" href="/app-67010791c2e5be47a288.js"/><link as="script" rel="preload" href="/styles-c2fe8482057191dca484.js"/><link as="script" rel="preload" href="/aed2e917f30c051bccba91aa15989a75fd0bd633-bf2b2cfa54bfbe3e54be.js"/><link as="script" rel="preload" href="/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-13ffe4cb75f059d7fae4.js"/><link as="fetch" rel="preload" href="/page-data/running/runDisney/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3090400250.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3090400250.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/318001574.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>(function() { try {
+  var mode = localStorage.getItem('theme-ui-color-mode');
+  if (!mode) return
+  document.body.classList.add('theme-ui-' + mode);
+} catch (e) {} })();</script><div id="___gatsby"><style data-emotion-css="1hycliv">body{--theme-ui-colors-transparent:var(--theme-ui-colors-transparent,transparent);--theme-ui-colors-black:var(--theme-ui-colors-black,#000);--theme-ui-colors-white:var(--theme-ui-colors-white,#fff);--theme-ui-colors-gray-0:var(--theme-ui-colors-gray-0,null);--theme-ui-colors-gray-1:var(--theme-ui-colors-gray-1,#f7fafc);--theme-ui-colors-gray-2:var(--theme-ui-colors-gray-2,#edf2f7);--theme-ui-colors-gray-3:var(--theme-ui-colors-gray-3,#e2e8f0);--theme-ui-colors-gray-4:var(--theme-ui-colors-gray-4,#cbd5e0);--theme-ui-colors-gray-5:var(--theme-ui-colors-gray-5,#a0aec0);--theme-ui-colors-gray-6:var(--theme-ui-colors-gray-6,#718096);--theme-ui-colors-gray-7:var(--theme-ui-colors-gray-7,#4a5568);--theme-ui-colors-gray-8:var(--theme-ui-colors-gray-8,#2d3748);--theme-ui-colors-gray-9:var(--theme-ui-colors-gray-9,#1a202c);--theme-ui-colors-red-0:var(--theme-ui-colors-red-0,null);--theme-ui-colors-red-1:var(--theme-ui-colors-red-1,#fff5f5);--theme-ui-colors-red-2:var(--theme-ui-colors-red-2,#fed7d7);--theme-ui-colors-red-3:var(--theme-ui-colors-red-3,#feb2b2);--theme-ui-colors-red-4:var(--theme-ui-colors-red-4,#fc8181);--theme-ui-colors-red-5:var(--theme-ui-colors-red-5,#f56565);--theme-ui-colors-red-6:var(--theme-ui-colors-red-6,#e53e3e);--theme-ui-colors-red-7:var(--theme-ui-colors-red-7,#c53030);--theme-ui-colors-red-8:var(--theme-ui-colors-red-8,#9b2c2c);--theme-ui-colors-red-9:var(--theme-ui-colors-red-9,#742a2a);--theme-ui-colors-orange-0:var(--theme-ui-colors-orange-0,null);--theme-ui-colors-orange-1:var(--theme-ui-colors-orange-1,#fffaf0);--theme-ui-colors-orange-2:var(--theme-ui-colors-orange-2,#feebc8);--theme-ui-colors-orange-3:var(--theme-ui-colors-orange-3,#fbd38d);--theme-ui-colors-orange-4:var(--theme-ui-colors-orange-4,#f6ad55);--theme-ui-colors-orange-5:var(--theme-ui-colors-orange-5,#ed8936);--theme-ui-colors-orange-6:var(--theme-ui-colors-orange-6,#dd6b20);--theme-ui-colors-orange-7:var(--theme-ui-colors-orange-7,#c05621);--theme-ui-colors-orange-8:var(--theme-ui-colors-orange-8,#9c4221);--theme-ui-colors-orange-9:var(--theme-ui-colors-orange-9,#7b341e);--theme-ui-colors-yellow-0:var(--theme-ui-colors-yellow-0,null);--theme-ui-colors-yellow-1:var(--theme-ui-colors-yellow-1,#fffff0);--theme-ui-colors-yellow-2:var(--theme-ui-colors-yellow-2,#fefcbf);--theme-ui-colors-yellow-3:var(--theme-ui-colors-yellow-3,#faf089);--theme-ui-colors-yellow-4:var(--theme-ui-colors-yellow-4,#f6e05e);--theme-ui-colors-yellow-5:var(--theme-ui-colors-yellow-5,#ecc94b);--theme-ui-colors-yellow-6:var(--theme-ui-colors-yellow-6,#d69e2e);--theme-ui-colors-yellow-7:var(--theme-ui-colors-yellow-7,#b7791f);--theme-ui-colors-yellow-8:var(--theme-ui-colors-yellow-8,#975a16);--theme-ui-colors-yellow-9:var(--theme-ui-colors-yellow-9,#744210);--theme-ui-colors-green-0:var(--theme-ui-colors-green-0,null);--theme-ui-colors-green-1:var(--theme-ui-colors-green-1,#f0fff4);--theme-ui-colors-green-2:var(--theme-ui-colors-green-2,#c6f6d5);--theme-ui-colors-green-3:var(--theme-ui-colors-green-3,#9ae6b4);--theme-ui-colors-green-4:var(--theme-ui-colors-green-4,#68d391);--theme-ui-colors-green-5:var(--theme-ui-colors-green-5,#48bb78);--theme-ui-colors-green-6:var(--theme-ui-colors-green-6,#38a169);--theme-ui-colors-green-7:var(--theme-ui-colors-green-7,#2f855a);--theme-ui-colors-green-8:var(--theme-ui-colors-green-8,#276749);--theme-ui-colors-green-9:var(--theme-ui-colors-green-9,#22543d);--theme-ui-colors-teal-0:var(--theme-ui-colors-teal-0,null);--theme-ui-colors-teal-1:var(--theme-ui-colors-teal-1,#e6fffa);--theme-ui-colors-teal-2:var(--theme-ui-colors-teal-2,#b2f5ea);--theme-ui-colors-teal-3:var(--theme-ui-colors-teal-3,#81e6d9);--theme-ui-colors-teal-4:var(--theme-ui-colors-teal-4,#4fd1c5);--theme-ui-colors-teal-5:var(--theme-ui-colors-teal-5,#38b2ac);--theme-ui-colors-teal-6:var(--theme-ui-colors-teal-6,#319795);--theme-ui-colors-teal-7:var(--theme-ui-colors-teal-7,#2c7a7b);--theme-ui-colors-teal-8:var(--theme-ui-colors-teal-8,#285e61);--theme-ui-colors-teal-9:var(--theme-ui-colors-teal-9,#234e52);--theme-ui-colors-blue-0:var(--theme-ui-colors-blue-0,null);--theme-ui-colors-blue-1:var(--theme-ui-colors-blue-1,#ebf8ff);--theme-ui-colors-blue-2:var(--theme-ui-colors-blue-2,#bee3f8);--theme-ui-colors-blue-3:var(--theme-ui-colors-blue-3,#90cdf4);--theme-ui-colors-blue-4:var(--theme-ui-colors-blue-4,#63b3ed);--theme-ui-colors-blue-5:var(--theme-ui-colors-blue-5,#4299e1);--theme-ui-colors-blue-6:var(--theme-ui-colors-blue-6,#3182ce);--theme-ui-colors-blue-7:var(--theme-ui-colors-blue-7,#2b6cb0);--theme-ui-colors-blue-8:var(--theme-ui-colors-blue-8,#2c5282);--theme-ui-colors-blue-9:var(--theme-ui-colors-blue-9,#2a4365);--theme-ui-colors-indigo-0:var(--theme-ui-colors-indigo-0,null);--theme-ui-colors-indigo-1:var(--theme-ui-colors-indigo-1,#ebf4ff);--theme-ui-colors-indigo-2:var(--theme-ui-colors-indigo-2,#c3dafe);--theme-ui-colors-indigo-3:var(--theme-ui-colors-indigo-3,#a3bffa);--theme-ui-colors-indigo-4:var(--theme-ui-colors-indigo-4,#7f9cf5);--theme-ui-colors-indigo-5:var(--theme-ui-colors-indigo-5,#667eea);--theme-ui-colors-indigo-6:var(--theme-ui-colors-indigo-6,#5a67d8);--theme-ui-colors-indigo-7:var(--theme-ui-colors-indigo-7,#4c51bf);--theme-ui-colors-indigo-8:var(--theme-ui-colors-indigo-8,#434190);--theme-ui-colors-indigo-9:var(--theme-ui-colors-indigo-9,#3c366b);--theme-ui-colors-purple-0:var(--theme-ui-colors-purple-0,null);--theme-ui-colors-purple-1:var(--theme-ui-colors-purple-1,#faf5ff);--theme-ui-colors-purple-2:var(--theme-ui-colors-purple-2,#e9d8fd);--theme-ui-colors-purple-3:var(--theme-ui-colors-purple-3,#d6bcfa);--theme-ui-colors-purple-4:var(--theme-ui-colors-purple-4,#b794f4);--theme-ui-colors-purple-5:var(--theme-ui-colors-purple-5,#9f7aea);--theme-ui-colors-purple-6:var(--theme-ui-colors-purple-6,#805ad5);--theme-ui-colors-purple-7:var(--theme-ui-colors-purple-7,#6b46c1);--theme-ui-colors-purple-8:var(--theme-ui-colors-purple-8,#553c9a);--theme-ui-colors-purple-9:var(--theme-ui-colors-purple-9,#44337a);--theme-ui-colors-pink-0:var(--theme-ui-colors-pink-0,null);--theme-ui-colors-pink-1:var(--theme-ui-colors-pink-1,#fff5f7);--theme-ui-colors-pink-2:var(--theme-ui-colors-pink-2,#fed7e2);--theme-ui-colors-pink-3:var(--theme-ui-colors-pink-3,#fbb6ce);--theme-ui-colors-pink-4:var(--theme-ui-colors-pink-4,#f687b3);--theme-ui-colors-pink-5:var(--theme-ui-colors-pink-5,#ed64a6);--theme-ui-colors-pink-6:var(--theme-ui-colors-pink-6,#d53f8c);--theme-ui-colors-pink-7:var(--theme-ui-colors-pink-7,#b83280);--theme-ui-colors-pink-8:var(--theme-ui-colors-pink-8,#97266d);--theme-ui-colors-pink-9:var(--theme-ui-colors-pink-9,#702459);--theme-ui-colors-grayDark:var(--theme-ui-colors-grayDark,#2d3748);--theme-ui-colors-text:var(--theme-ui-colors-text,#2d3748);--theme-ui-colors-background:var(--theme-ui-colors-background,#fff);--theme-ui-colors-primary:var(--theme-ui-colors-primary,#6b46c1);--theme-ui-colors-primaryHover:var(--theme-ui-colors-primaryHover,#2c5282);--theme-ui-colors-secondary:var(--theme-ui-colors-secondary,#5f6c80);--theme-ui-colors-muted:var(--theme-ui-colors-muted,#e2e8f0);--theme-ui-colors-success:var(--theme-ui-colors-success,#9ae6b4);--theme-ui-colors-info:var(--theme-ui-colors-info,#63b3ed);--theme-ui-colors-warning:var(--theme-ui-colors-warning,#faf089);--theme-ui-colors-danger:var(--theme-ui-colors-danger,#feb2b2);--theme-ui-colors-light:var(--theme-ui-colors-light,#f7fafc);--theme-ui-colors-dark:var(--theme-ui-colors-dark,#2d3748);--theme-ui-colors-textMuted:var(--theme-ui-colors-textMuted,#718096);--theme-ui-colors-toggleIcon:var(--theme-ui-colors-toggleIcon,#2d3748);--theme-ui-colors-heading:var(--theme-ui-colors-heading,#000);--theme-ui-colors-divide:var(--theme-ui-colors-divide,#cbd5e0);color:var(--theme-ui-colors-text,#2d3748);background-color:var(--theme-ui-colors-background,#fff);}body.theme-ui-dark{--theme-ui-colors-text:var(--theme-ui-colors-modes-dark-text,#cbd5e0);--theme-ui-colors-primary:var(--theme-ui-colors-modes-dark-primary,#9f7aea);--theme-ui-colors-secondary:var(--theme-ui-colors-modes-dark-secondary,#7f8ea3);--theme-ui-colors-toggleIcon:var(--theme-ui-colors-modes-dark-toggleIcon,#cbd5e0);--theme-ui-colors-background:var(--theme-ui-colors-modes-dark-background,#1A202C);--theme-ui-colors-heading:var(--theme-ui-colors-modes-dark-heading,#fff);--theme-ui-colors-divide:var(--theme-ui-colors-modes-dark-divide,#2d3748);--theme-ui-colors-muted:var(--theme-ui-colors-modes-dark-muted,#2d3748);}</style><style data-emotion-css="tm2q0o">*{box-sizing:border-box;}body{margin:0;font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";line-height:1.625;font-weight:400;color:var(--theme-ui-colors-text,#2d3748);background-color:var(--theme-ui-colors-background,#fff);padding:0;box-sizing:border-box;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}</style><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="kcr4c7">*{box-sizing:inherit;}html{-webkit-text-size-adjust:100%;}img{border-style:none;}pre{font-family:monospace;font-size:1em;}[hidden]{display:none;}::selection{background-color:var(--theme-ui-colors-text,#2d3748);color:var(--theme-ui-colors-background,#fff);}a{-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;color:text;}</style><style data-emotion-css="1g597hz">.css-1g597hz{border:0;-webkit-clip:react(0 0 0 0);clip:react(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;overflow:hidden;position:absolute;}.css-1g597hz:focus{padding:1rem;position:fixed;top:15px;left:15px;background-color:var(--theme-ui-colors-heading,#000);color:var(--theme-ui-colors-background,#fff);z-index:1;width:auto;height:auto;-webkit-clip:auto;clip:auto;-webkit-text-decoration:none;text-decoration:none;}</style><a href="#skip-nav" data-skip-link="true" class="css-1g597hz">Skip to content</a><style data-emotion-css="1jrqzhj">.css-1jrqzhj{box-sizing:border-box;margin:0;min-width:0;width:100%;max-width:container;margin-left:auto;margin-right:auto;padding:1rem;max-width:1024px;}@media screen and (min-width:640px){.css-1jrqzhj{padding:2rem;}}</style><div class="css-1jrqzhj"><style data-emotion-css="1wt4r56">.css-1wt4r56{margin-bottom:4rem;}@media screen and (min-width:640px){.css-1wt4r56{margin-bottom:8rem;}}</style><header class="css-1wt4r56"><style data-emotion-css="1eswzqe">.css-1eswzqe{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}</style><style data-emotion-css="190uhut">.css-190uhut{box-sizing:border-box;margin:0;min-width:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}</style><div class="css-190uhut"><style data-emotion-css="dz3ojy">.css-dz3ojy{color:var(--theme-ui-colors-heading,#000);-webkit-text-decoration:none;text-decoration:none;}</style><a aria-label="Elaina - Back to home" class="css-dz3ojy" href="/"><style data-emotion-css="1kmktz0">.css-1kmktz0{margin-top:0;margin-bottom:0;font-weight:500;font-size:1.5rem;}@media screen and (min-width:640px){.css-1kmktz0{font-size:1.875rem;}}</style><h1 class="css-1kmktz0">Elaina</h1></a><style data-emotion-css="af3ja4">.css-af3ja4{opacity:0.65;position:relative;border-radius:5px;width:40px;height:25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:opacity 0.3s ease;transition:opacity 0.3s ease;border:none;outline:none;background:none;cursor:pointer;padding:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;}.css-af3ja4:hover,.css-af3ja4:focus{opacity:1;}</style><button type="button" aria-label="Activate Dark Mode" title="Activate Dark Mode" class="css-af3ja4"><style data-emotion-css="iiu7h7">.css-iiu7h7{position:relative;width:24px;height:24px;border-radius:50%;border:none;background-color:var(--theme-ui-colors-transparent,transparent);-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all 0.45s ease;transition:all 0.45s ease;overflow:hidden;box-shadow:inset 8px -8px 0px 0px var(--theme-ui-colors-toggleIcon,#2d3748);}.css-iiu7h7:before{content:"";position:absolute;right:-9px;top:-9px;height:24px;width:24px;border:none;border-radius:50%;-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);opacity:1;-webkit-transition:-webkit-transform 0.45s ease;-webkit-transition:transform 0.45s ease;transition:transform 0.45s ease;}.css-iiu7h7:after{content:"";width:8px;height:8px;border-radius:50%;margin:-4px 0 0 -4px;position:absolute;top:50%;left:50%;box-shadow:0 -23px 0 var(--theme-ui-colors-toggleIcon,#2d3748),0 23px 0 var(--theme-ui-colors-toggleIcon,#2d3748),23px 0 0 var(--theme-ui-colors-toggleIcon,#2d3748),-23px 0 0 var(--theme-ui-colors-toggleIcon,#2d3748),15px 15px 0 var(--theme-ui-colors-toggleIcon,#2d3748),-15px 15px 0 var(--theme-ui-colors-toggleIcon,#2d3748),15px -15px 0 var(--theme-ui-colors-toggleIcon,#2d3748),-15px -15px 0 var(--theme-ui-colors-toggleIcon,#2d3748);-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transition:all 0.35s ease;transition:all 0.35s ease;}</style><div class="css-iiu7h7"></div></button></div><style data-emotion-css="1kvspmd">.css-1kvspmd{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:var(--theme-ui-colors-divide,#cbd5e0);padding-bottom:1rem;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin-top:1rem;color:var(--theme-ui-colors-secondary,#5f6c80);-webkit-flex-flow:wrap;-ms-flex-flow:wrap;flex-flow:wrap;}.css-1kvspmd a{color:var(--theme-ui-colors-secondary,#5f6c80);}.css-1kvspmd a:hover{color:var(--theme-ui-colors-heading,#000);}</style><div class="css-1kvspmd"><style data-emotion-css="nrb238">.css-nrb238{font-size:1rem;}.css-nrb238 a:not(:last-of-type){margin-right:1rem;}@media screen and (min-width:640px){.css-nrb238{font-size:18px;}}.css-nrb238 .active{color:var(--theme-ui-colors-heading,#000);}</style><nav class="css-nrb238"><style data-emotion-css="688a3f">.css-688a3f{box-sizing:border-box;margin:0;min-width:0;color:var(--theme-ui-colors-primary,#6b46c1);-webkit-text-decoration:none;text-decoration:none;}.css-688a3f:hover{-webkit-text-decoration:underline;text-decoration:underline;}</style><a class="css-688a3f" href="/tags">Blog</a><a class="css-688a3f" href="/about">About</a></nav><style data-emotion-css="e5k4e3">.css-e5k4e3{font-size:1rem;}.css-e5k4e3 a:not(:first-of-type){margin-left:1rem;}@media screen and (min-width:640px){.css-e5k4e3{font-size:18px;}}</style><div class="css-e5k4e3"><a href="https://github.com/ecoli1996" class="css-688a3f">GitHub</a></div></div></header><style data-emotion-css="ld0m">.css-ld0m [data-name='live-editor']{font-size:1rem;}.css-ld0m [data-name='live-editor'] textarea,.css-ld0m [data-name='live-editor'] pre{padding:1rem !important;}.css-ld0m [data-name='live-preview']{padding:calc(0.5rem + 10px) !important;background-color:#d2c7ec;}.css-ld0m .prism-code{font-size:1rem;padding:2rem 1rem 1rem 1rem;webkit-overflow-scrolling:touch;background-color:var(--theme-ui-colors-transparent,transparent);min-width:100%;margin-bottom:0;margin-top:0;overflow:auto;}@media screen and (min-width:640px){.css-ld0m .prism-code{font-size:1rem;}}@media screen and (min-width:768px){.css-ld0m .prism-code{font-size:1.25rem;}}.css-ld0m .prism-code[data-linenumber="false"] .token-line{padding-left:1rem;}.css-ld0m .gatsby-highlight[data-language=''] .prism-code,.css-ld0m .gatsby-highlight[data-language='noLineNumbers'] .prism-code{padding-top:1rem;}.css-ld0m .token{display:inline-block;}.css-ld0m p > code,.css-ld0m li > code{background-color:var(--theme-ui-colors-gray-2,#edf2f7);color:var(--theme-ui-colors-gray-8,#2d3748);padding-left:0.5rem;padding-right:0.5rem;padding-top:0.25rem;padding-bottom:0.25rem;border-radius:2px;}.css-ld0m .gatsby-highlight{font-size:1rem;position:relative;webkit-overflow-scrolling:touch;background-color:rgb(1,22,39);border-radius:2px;margin-left:0;margin-right:0;}@media screen and (min-width:640px){.css-ld0m .gatsby-highlight{font-size:1rem;margin-left:0;margin-right:0;}}@media screen and (min-width:768px){.css-ld0m .gatsby-highlight{font-size:1.25rem;margin-left:0;margin-right:0;}}@media screen and (min-width:1024px){.css-ld0m .gatsby-highlight{margin-left:-1rem;margin-right:-1rem;}}.css-ld0m .gatsby-highlight .token-line{margin-left:-1rem;margin-right:-1rem;min-width:100%;}.css-ld0m .gatsby-highlight pre code{float:left;min-width:100%;}.css-ld0m .gatsby-highlight pre[class*="language-"]:before{background-color:var(--theme-ui-colors-white,#fff);border-radius:0 0 0.25rem 0.25rem;color:var(--theme-ui-colors-black,#000);font-size:12px;-webkit-letter-spacing:0.025rem;-moz-letter-spacing:0.025rem;-ms-letter-spacing:0.025rem;letter-spacing:0.025rem;padding:0.1rem 0.5rem;position:absolute;left:1rem;text-align:right;text-transform:uppercase;top:0;}.css-ld0m .gatsby-highlight pre[class~="language-javascript"]:before,.css-ld0m .gatsby-highlight pre[class~="language-js"]:before{content:"js";background:#f7df1e;color:var(--theme-ui-colors-black,#000);}.css-ld0m .gatsby-highlight pre[class~="language-jsx"]:before{content:"jsx";background:#61dafb;color:var(--theme-ui-colors-black,#000);}.css-ld0m .gatsby-highlight pre[class~="language-ts"]:before{content:"ts";background:#61dafb;color:var(--theme-ui-colors-black,#000);}.css-ld0m .gatsby-highlight pre[class~="language-tsx"]:before{content:"tsx";background:#61dafb;color:var(--theme-ui-colors-black,#000);}.css-ld0m .gatsby-highlight pre[class~="language-html"]:before{content:"html";background:#005a9c;color:var(--theme-ui-colors-white,#fff);}.css-ld0m .gatsby-highlight pre[class~="language-xml"]:before{content:"xml";background:#005a9c;color:var(--theme-ui-colors-white,#fff);}.css-ld0m .gatsby-highlight pre[class~="language-svg"]:before{content:"svg";background:#005a9c;color:var(--theme-ui-colors-white,#fff);}.css-ld0m .gatsby-highlight pre[class~="language-graphql"]:before{content:"GraphQL";background:#E10098;}.css-ld0m .gatsby-highlight pre[class~="language-css"]:before{content:"css";background:#ff9800;color:var(--theme-ui-colors-black,#000);}.css-ld0m .gatsby-highlight pre[class~="language-mdx"]:before{content:"mdx";background:#f9ac00;color:var(--theme-ui-colors-black,#000);}.css-ld0m .gatsby-highlight pre[class~="language-text"]:before{content:"text";}.css-ld0m .gatsby-highlight pre[class~='language-shell']:before{content:'shell';}.css-ld0m .gatsby-highlight pre[class~='language-sh']:before{content:'sh';}.css-ld0m .gatsby-highlight pre[class~='language-bash']:before{content:'bash';}.css-ld0m .gatsby-highlight pre[class~='language-yaml']:before{content:'yaml';background:#ffa8df;}.css-ld0m .gatsby-highlight pre[class~='language-yml']:before{content:'yml';background:#ffa8df;}.css-ld0m .gatsby-highlight pre[class~='language-markdown']:before{content:'md';}.css-ld0m .gatsby-highlight pre[class~='language-json']:before,.css-ld0m .gatsby-highlight pre[class~='language-json5']:before{content:'json';background:linen;}.css-ld0m .gatsby-highlight pre[class~='language-diff']:before{content:'diff';background:#e6ffed;}.css-ld0m .gatsby-highlight > code[class*="language-"],.css-ld0m .gatsby-highlight > pre[class=*="language-"]{word-spacing:normal;word-break:normal;overflow-wrap:normal;line-height:1.5;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;}.css-ld0m .gatsby-highlight pre::-webkit-scrollbar{width:0.5rem;height:0.5rem;}.css-ld0m .gatsby-highlight pre::-webkit-scrollbar-thumb{background-color:var(--theme-ui-colors-primary,#6b46c1);}.css-ld0m .gatsby-highlight pre::-webkit-scrollbar-track{background:rgb(1,22,39);}.css-ld0m .line-number-style{display:inline-block;width:3em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;opacity:0.3;text-align:center;position:relative;}.css-ld0m .code-title{background-color:#d2c7ec;color:var(--theme-ui-colors-black,#000);font-size:0.875rem;padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;font-family:Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;margin-left:0;margin-right:0;}@media screen and (min-width:640px){.css-ld0m .code-title{margin-left:0;margin-right:0;}}@media screen and (min-width:768px){.css-ld0m .code-title{margin-left:0;margin-right:0;}}@media screen and (min-width:1024px){.css-ld0m .code-title{margin-left:-1rem;margin-right:-1rem;}}.css-ld0m [data-name='live-preview'],.css-ld0m [data-name='live-editor']{margin-left:0;margin-right:0;font-size:1rem;}@media screen and (min-width:640px){.css-ld0m [data-name='live-preview'],.css-ld0m [data-name='live-editor']{margin-left:0;margin-right:0;font-size:1rem;}}@media screen and (min-width:768px){.css-ld0m [data-name='live-preview'],.css-ld0m [data-name='live-editor']{margin-left:0;margin-right:0;font-size:1.25rem;}}@media screen and (min-width:1024px){.css-ld0m [data-name='live-preview'],.css-ld0m [data-name='live-editor']{margin-left:-1rem;margin-right:-1rem;}}.css-ld0m .token-line{padding-right:1rem;}.css-ld0m .highlight-line{background-color:rgb(2,55,81);border-left:4px solid rgb(2,155,206);}.css-ld0m .highlight-line .line-number-style{width:calc(3em - 4px);opacity:0.5;left:-2px;}.css-ld0m .react-live-wrapper{position:relative;}.css-ld0m .react-live-wrapper .code-copy-button{right:0;}@media screen and (min-width:640px){.css-ld0m .react-live-wrapper .code-copy-button{right:0;}}@media screen and (min-width:768px){.css-ld0m .react-live-wrapper .code-copy-button{right:0;}}@media screen and (min-width:1024px){.css-ld0m .react-live-wrapper .code-copy-button{right:-1rem;}}</style><style data-emotion-css="27gylk">.css-27gylk{box-sizing:border-box;margin:0;min-width:0;}.css-27gylk [data-name='live-editor']{font-size:1rem;}.css-27gylk [data-name='live-editor'] textarea,.css-27gylk [data-name='live-editor'] pre{padding:1rem !important;}.css-27gylk [data-name='live-preview']{padding:calc(0.5rem + 10px) !important;background-color:#d2c7ec;}.css-27gylk .prism-code{font-size:1rem;padding:2rem 1rem 1rem 1rem;webkit-overflow-scrolling:touch;background-color:var(--theme-ui-colors-transparent,transparent);min-width:100%;margin-bottom:0;margin-top:0;overflow:auto;}@media screen and (min-width:640px){.css-27gylk .prism-code{font-size:1rem;}}@media screen and (min-width:768px){.css-27gylk .prism-code{font-size:1.25rem;}}.css-27gylk .prism-code[data-linenumber="false"] .token-line{padding-left:1rem;}.css-27gylk .gatsby-highlight[data-language=''] .prism-code,.css-27gylk .gatsby-highlight[data-language='noLineNumbers'] .prism-code{padding-top:1rem;}.css-27gylk .token{display:inline-block;}.css-27gylk p > code,.css-27gylk li > code{background-color:var(--theme-ui-colors-gray-2,#edf2f7);color:var(--theme-ui-colors-gray-8,#2d3748);padding-left:0.5rem;padding-right:0.5rem;padding-top:0.25rem;padding-bottom:0.25rem;border-radius:2px;}.css-27gylk .gatsby-highlight{font-size:1rem;position:relative;webkit-overflow-scrolling:touch;background-color:rgb(1,22,39);border-radius:2px;margin-left:0;margin-right:0;}@media screen and (min-width:640px){.css-27gylk .gatsby-highlight{font-size:1rem;margin-left:0;margin-right:0;}}@media screen and (min-width:768px){.css-27gylk .gatsby-highlight{font-size:1.25rem;margin-left:0;margin-right:0;}}@media screen and (min-width:1024px){.css-27gylk .gatsby-highlight{margin-left:-1rem;margin-right:-1rem;}}.css-27gylk .gatsby-highlight .token-line{margin-left:-1rem;margin-right:-1rem;min-width:100%;}.css-27gylk .gatsby-highlight pre code{float:left;min-width:100%;}.css-27gylk .gatsby-highlight pre[class*="language-"]:before{background-color:var(--theme-ui-colors-white,#fff);border-radius:0 0 0.25rem 0.25rem;color:var(--theme-ui-colors-black,#000);font-size:12px;-webkit-letter-spacing:0.025rem;-moz-letter-spacing:0.025rem;-ms-letter-spacing:0.025rem;letter-spacing:0.025rem;padding:0.1rem 0.5rem;position:absolute;left:1rem;text-align:right;text-transform:uppercase;top:0;}.css-27gylk .gatsby-highlight pre[class~="language-javascript"]:before,.css-27gylk .gatsby-highlight pre[class~="language-js"]:before{content:"js";background:#f7df1e;color:var(--theme-ui-colors-black,#000);}.css-27gylk .gatsby-highlight pre[class~="language-jsx"]:before{content:"jsx";background:#61dafb;color:var(--theme-ui-colors-black,#000);}.css-27gylk .gatsby-highlight pre[class~="language-ts"]:before{content:"ts";background:#61dafb;color:var(--theme-ui-colors-black,#000);}.css-27gylk .gatsby-highlight pre[class~="language-tsx"]:before{content:"tsx";background:#61dafb;color:var(--theme-ui-colors-black,#000);}.css-27gylk .gatsby-highlight pre[class~="language-html"]:before{content:"html";background:#005a9c;color:var(--theme-ui-colors-white,#fff);}.css-27gylk .gatsby-highlight pre[class~="language-xml"]:before{content:"xml";background:#005a9c;color:var(--theme-ui-colors-white,#fff);}.css-27gylk .gatsby-highlight pre[class~="language-svg"]:before{content:"svg";background:#005a9c;color:var(--theme-ui-colors-white,#fff);}.css-27gylk .gatsby-highlight pre[class~="language-graphql"]:before{content:"GraphQL";background:#E10098;}.css-27gylk .gatsby-highlight pre[class~="language-css"]:before{content:"css";background:#ff9800;color:var(--theme-ui-colors-black,#000);}.css-27gylk .gatsby-highlight pre[class~="language-mdx"]:before{content:"mdx";background:#f9ac00;color:var(--theme-ui-colors-black,#000);}.css-27gylk .gatsby-highlight pre[class~="language-text"]:before{content:"text";}.css-27gylk .gatsby-highlight pre[class~='language-shell']:before{content:'shell';}.css-27gylk .gatsby-highlight pre[class~='language-sh']:before{content:'sh';}.css-27gylk .gatsby-highlight pre[class~='language-bash']:before{content:'bash';}.css-27gylk .gatsby-highlight pre[class~='language-yaml']:before{content:'yaml';background:#ffa8df;}.css-27gylk .gatsby-highlight pre[class~='language-yml']:before{content:'yml';background:#ffa8df;}.css-27gylk .gatsby-highlight pre[class~='language-markdown']:before{content:'md';}.css-27gylk .gatsby-highlight pre[class~='language-json']:before,.css-27gylk .gatsby-highlight pre[class~='language-json5']:before{content:'json';background:linen;}.css-27gylk .gatsby-highlight pre[class~='language-diff']:before{content:'diff';background:#e6ffed;}.css-27gylk .gatsby-highlight > code[class*="language-"],.css-27gylk .gatsby-highlight > pre[class=*="language-"]{word-spacing:normal;word-break:normal;overflow-wrap:normal;line-height:1.5;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;}.css-27gylk .gatsby-highlight pre::-webkit-scrollbar{width:0.5rem;height:0.5rem;}.css-27gylk .gatsby-highlight pre::-webkit-scrollbar-thumb{background-color:var(--theme-ui-colors-primary,#6b46c1);}.css-27gylk .gatsby-highlight pre::-webkit-scrollbar-track{background:rgb(1,22,39);}.css-27gylk .line-number-style{display:inline-block;width:3em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;opacity:0.3;text-align:center;position:relative;}.css-27gylk .code-title{background-color:#d2c7ec;color:var(--theme-ui-colors-black,#000);font-size:0.875rem;padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;font-family:Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;margin-left:0;margin-right:0;}@media screen and (min-width:640px){.css-27gylk .code-title{margin-left:0;margin-right:0;}}@media screen and (min-width:768px){.css-27gylk .code-title{margin-left:0;margin-right:0;}}@media screen and (min-width:1024px){.css-27gylk .code-title{margin-left:-1rem;margin-right:-1rem;}}.css-27gylk [data-name='live-preview'],.css-27gylk [data-name='live-editor']{margin-left:0;margin-right:0;font-size:1rem;}@media screen and (min-width:640px){.css-27gylk [data-name='live-preview'],.css-27gylk [data-name='live-editor']{margin-left:0;margin-right:0;font-size:1rem;}}@media screen and (min-width:768px){.css-27gylk [data-name='live-preview'],.css-27gylk [data-name='live-editor']{margin-left:0;margin-right:0;font-size:1.25rem;}}@media screen and (min-width:1024px){.css-27gylk [data-name='live-preview'],.css-27gylk [data-name='live-editor']{margin-left:-1rem;margin-right:-1rem;}}.css-27gylk .token-line{padding-right:1rem;}.css-27gylk .highlight-line{background-color:rgb(2,55,81);border-left:4px solid rgb(2,155,206);}.css-27gylk .highlight-line .line-number-style{width:calc(3em - 4px);opacity:0.5;left:-2px;}.css-27gylk .react-live-wrapper{position:relative;}.css-27gylk .react-live-wrapper .code-copy-button{right:0;}@media screen and (min-width:640px){.css-27gylk .react-live-wrapper .code-copy-button{right:0;}}@media screen and (min-width:768px){.css-27gylk .react-live-wrapper .code-copy-button{right:0;}}@media screen and (min-width:1024px){.css-27gylk .react-live-wrapper .code-copy-button{right:-1rem;}}</style><div id="skip-nav" class=" css-27gylk"><style data-emotion-css="19ykez0">.css-19ykez0{box-sizing:border-box;margin:0;min-width:0;font-family:inherit;font-weight:700;line-height:1.25;font-family:inherit;font-weight:700;line-height:1.25;margin:0;margin-bottom:0.25rem;font-size:1.875rem;margin-top:2rem;color:var(--theme-ui-colors-heading,#000);}@media screen and (min-width:640px){.css-19ykez0{font-size:2.25rem;}}@media screen and (min-width:768px){.css-19ykez0{font-size:3rem;}}</style><h2 class="css-19ykez0">The runDisney Roadmap: Preparing for Your First runDisney Race</h2><style data-emotion-css="1fkzbc2">.css-1fkzbc2{color:var(--theme-ui-colors-secondary,#5f6c80);margin-top:1rem;font-size:1rem;}.css-1fkzbc2 a{color:var(--theme-ui-colors-secondary,#5f6c80);}@media screen and (min-width:640px){.css-1fkzbc2{font-size:1rem;}}@media screen and (min-width:768px){.css-1fkzbc2{font-size:1.25rem;}}</style><p class="css-1fkzbc2">2021 February 07<!-- --> — <a class="css-688a3f" href="/tags/running">Running</a>, <a class="css-688a3f" href="/tags/travel">Travel</a> — <span>14<!-- --> min read</span></p><style data-emotion-css="f0b8g7">.css-f0b8g7{margin-top:4rem;margin-bottom:4rem;}.css-f0b8g7 .gatsby-resp-image-wrapper{margin-top:2rem;margin-bottom:2rem;box-shadow:rgba(0,0,0,0.15) 0px 32px 32px 0px,rgba(0,0,0,0.15) 0px 16px 16px 0px,rgba(0,0,0,0.15) 0px 8px 8px 0px,rgba(0,0,0,0.15) 0px 4px 4px 0px;}@media screen and (min-width:640px){.css-f0b8g7 .gatsby-resp-image-wrapper{margin-top:2rem;margin-bottom:2rem;}}@media screen and (min-width:768px){.css-f0b8g7 .gatsby-resp-image-wrapper{margin-top:4rem;margin-bottom:4rem;}}</style><section class="css-f0b8g7"><style data-emotion-css="1bkk5q4">.css-1bkk5q4{font-size:1rem;-webkit-letter-spacing:-0.003em;-moz-letter-spacing:-0.003em;-ms-letter-spacing:-0.003em;letter-spacing:-0.003em;line-height:1.625;--baseline-multiplier:0.179;--x-height-multiplier:0.35;}@media screen and (min-width:640px){.css-1bkk5q4{font-size:1rem;}}@media screen and (min-width:768px){.css-1bkk5q4{font-size:1.25rem;}}</style><p class="css-1bkk5q4">Back in January 2020, I ran my first half marathon during the Walt Disney World Marathon Weekend along with one of my friends, while my boyfriend ran the marathon.
+If you&#x27;re curious about that experience, <style data-emotion-css="1od09yo">.css-1od09yo{color:var(--theme-ui-colors-primary,#6b46c1);-webkit-text-decoration:none;text-decoration:none;}.css-1od09yo:hover{-webkit-text-decoration:underline;text-decoration:underline;}</style><a href="https://arrayoflight.gatsbyjs.io/race-reports/wdw-half-marathon-2020" class="css-1od09yo">you can check out my race report here!</a>.
+While I tried to incorporate some advice and tips in that race report, I thought I&#x27;d dedicate an entire post to some lessons I learned during my first runDisney experience.
+So let&#x27;s get right down to it!</p><p class="css-1bkk5q4">Actually real quick... I use the word &quot;bib&quot; a lot in this post. Just in case you don&#x27;t know what a bib is, it&#x27;s that square paper you pin to your clothes when you race that distinguishes you from the other runners and indicates your registration with the race.
+So sometimes I may interchange it with &quot;registration.&quot;
+<span class="gatsby-resp-image-wrapper" style="position:relative;display:block;margin-left:auto;margin-right:auto;max-width:400px">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom:100%;position:relative;bottom:0;left:0;background-image:url(&#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFZUlEQVQ4yx2TWXDT9xHH/6/NS5gmWBhJ6LZ1WvdlyTpsXT4lC0sC+ZAx2OHImAdsTLhceZyBcnTS5oA4TJiYowaXBEISMC2mAVKO4KQQkhYS2pl22qZHZtKZvn/6Iw/f2Zfd7+5+97vSJ3/4nluP/sunT/7Hna+/5+bDfzL7/u94ad8xJl5+k+3TRxmfPsKeQ8f5ySsnOLNwj0++/JbFz/7C5dt/4tLtJ3xw4xHvLn7F3MJ9pOtf/IvrD7/j2hf/Efg3iwLbq6+xZ/8M+2cuMPWLOfb+/Jc/kA+P7uX0whK/ffgPLt15wpV7f/0BF28+5ldXv2L24hLSrQd/4+qn34hOX3P57p+Zv3qfw2/Oc+rDOyx++R0Ln/+dK7//ljNXPqP606OcvfaQC7e+4d2nJNcfc/bjP3JWTHdy4QHHLtxDeuPt0/QOvcDadcNs2z3FjupBZk5/wPyvlzj/8QMu3n3E+buPOXH5NnsOv8X8tSVOXbzBe1eWOH76EtWpVzgx9xvemb8u6haRYokE0WQah9eH0WqlVxBXRl6krbOHl/f/jM9vLnH12BwfHTrK/HiVy5MHOVc9xJnJfby1ZRu7+9bz6uh2zk5MMrNhM1J5YICBoQ34gmHsTie5nhL7DrzOWG8fw7l2pjr7qca7qTa1s9Of5gVrE9vizbyRzjCbyDDf3sH9bJKPOlroC/uQCsUuRjcPsmWkn8H+Mrv2Vtk3toNNnRkObSlQsLoYt7jpX6UnU6OmErHzTibIXN7PhqSH6WYLh91O+l0RgrEWpPacn3wpRHcxSCwToCkZZSARpN9rpRBqoGA3sdcvcowuEmKDxC4zGze6KZ3UMHREiXbsOVLxCJVkhdaWTqRUzk4630AiZyPVZuJUr4OiW06zYgWR51eQ1snZ5G9keuII5UyFcijEa1u93OhOM9LspTsWYGxkPSfHdjEljivFO02keyxkSg3ki3a2ZuoZb9dzsFHJixo5Q7Fa1phqmKisJ1foIzjoYLoYZUPJR1feQcJjYXxkHcd3TvPqjkmkTkFUGHSzetBJusvKMqWBAyMZzif0jLprye1cQbZNj37rj5B9uAylUYdaayTcbKOjy4nVWEss4KWjpYtEJI3UURKr5s0ks0+TDOjrlMyu8XPOZ2C3r1Zoa6RLLwQvywgmtTz7zDLMNgUut4o6gw5fIEi9oQ6H3YLRZEQKpbREUnpiSQPhFi1ur4pzgwYuNOvZ7pDj2PosdX01ODYqMNTIWC57DuWq5Wi0NQIydHolerkSnUqDWakSGqbrSLQZiaUNxBIGoi0Gpl16jmlUzGh1ONQ/5hkBhb4W+VMiTQ0mowyPS064UYUvpGDAZqHisOCvUyM1iyOk2s20dlnEd1iIpwxsiriZsNkY0KmJG9QkzfV0BhqwWGRYTbU0CLhtK/E55chVy0lr6ii5zGj0cqSMIGoXlunucZLN2sm0WRnKOliXNBOwyygk6nEb1axUPI/Ho8DtUuBxK3A4VmK3yzFbVtIY8BMIWggEtEjZHhfdq52Uil4K3R5KOS82kxybWYZGXUNH3EYuYqM1ZCcUVOP3q0ThKrz+Vbg9Krw+OcObR8TLtuEWjaRs3klP3kWlHGJN3kNr0ojTqaejtYnVwrxBj5ZszEV1MEM8aiAS1RGOqInGRWzS4w+o6CnlSLeGcAgJpJ5uN32lIH3CKv1rQxw88BJ7JnextphgdvZtQmEPPmHeaNBBLGom1lwnjldPbznM+JbVbB7uoFhOkGp10hg2IK0t+llT9FHIuwVJkJHhIqlMI7GYkXI5TVOT8GdIT0ODTuikIyE2aEmaxPR+JkYLTE70URmIk8jYRTML/wcs1DzQM7XJuwAAAABJRU5ErkJggg==&#x27;);background-size:cover;display:block"></span>
+  <img class="gatsby-resp-image-image css-0" alt="An example of a bib" title="An example of a bib" src="/static/d0c4b37a7140af28b3d2ca0773edf736/6a8a8/bib.png" srcSet="/static/d0c4b37a7140af28b3d2ca0773edf736/5243c/bib.png 240w,/static/d0c4b37a7140af28b3d2ca0773edf736/6a8a8/bib.png 400w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0" loading="lazy"/>
+    </span></p><p class="css-1bkk5q4">Now let&#x27;s get started!!</p><style data-emotion-css="170hkfz">.css-170hkfz{font-family:inherit;font-weight:700;line-height:1.25;margin:0;margin-bottom:0.25rem;font-size:1.5rem;margin-top:2rem;color:var(--theme-ui-colors-heading,#000);}@media screen and (min-width:640px){.css-170hkfz{font-size:1.875rem;}}@media screen and (min-width:768px){.css-170hkfz{font-size:2.25rem;}}</style><h3 class="css-170hkfz">Should I Make This My First 5K/10K/Half/Marathon?</h3><p class="css-1bkk5q4">I made the decision to do my first half marathon at the WDW Marathon Weekend because I was intimidated by the distance.
+Having a theme like Disney took some of that fear away. Not only that, but so many people run their first race distance (or even first race in general) during this weekend.
+Furthermore, there is such an air of celebration during this weekend that adds so much reward to your finish! I mean what better way to celebrate your first race
+than to go to Disney World? And, because it&#x27;s such a big race, there are so many events at the expo to enjoy and lots of on-course volunteers, aid stations, medical staff, etc.
+to help propel you to the finish line. When it came down to it, a part of me thought I may never want to do a half marathon again (LOL), so I might as well go big or go home!
+I say &quot;LOL&quot; because I think the whole runDisney atmosphere made me want to do more races. It&#x27;s hard to say if I would&#x27;ve felt the same way doing a non-runDisney race.</p><p class="css-1bkk5q4">But what about reasons not to make this your first race? For one, it&#x27;s expensive in both cost and time.
+The reason the runDisney races are so expensive is because... it is Disney. I mean there are also all the road closures and cast members they need to pay,
+but a big part of the cost is that you are doing something Disney.</p><p class="css-1bkk5q4"><span class="gatsby-resp-image-wrapper" style="position:relative;display:block;margin-left:auto;margin-right:auto;max-width:400px">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom:100%;position:relative;bottom:0;left:0;background-image:url(&#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAAEJUlEQVQ4y2WU22scZRiH5x/QJE2yh5nZOZ9ndg47e8qxSTbdtKlJoUlqaoRKUrCiNpIqpNUrFRpQiCBYD7RQBbU3varmQot6Ua/EY0XEIgj2qnphwRtvfr7z7SZWvXj4vp15v+f9fe+yy+WKJeR5mVCRK8qEeg9K91lnHSzs1kooiAr4kgZekCGUFAzmi8iTi8sKCoJKBRpb84L+D3xG53lB0JisKOqERqgMQdJISM0LPNXI4AqCQjKVFRYyBON/dCTmHnzJIpFJ2GwVZZNuIKJY0klI0VnHktlBNP51eA/23gIvWR2RbJPIob1Be4OuzNM7A1wWm6fYvJR1NliXLMGuhO27oiLByx2ZoDgMkfaS5tKVhY6QL3WFssW6ZQ/5ks1EfFfEU6JMxN8rylBdlDQPslFGgb4oQdZImA1V1qmoE70zm4zu1aT/JFJcJtqVSboPxSyjKEj0jmYokqykmgxBoQEzDHYVNqPdJKrHBLtkogzZcKHZAXhRgqTSlTORpFmQdZsKLSYWVasrcbsCnw4lsIJaVxIwFNOHankwnDJESYGiW+AkEmQyhcjWTC5p9l4KdpBm5ERDqO0/xOal2RGJQpbMcALYfgRFU2HaNrhMpJouQzEchszw2GxUO4ZsRmhOL2Lx5Bm2N/0UhhsRZVheGV5YgeOYKIcBOM1yoNseQ7M6qIyAEsR0uAbNH8KjZ1/GM1uXoHt1eFEDTpAQMfwwQZzWUEl8tKYa4EzHZ11M6pbF120ferY6lMRLSVBDe+kkrn3xE85f3EFlZBZRZQRBXCVSREkV1UYTI0MxVpYmwfnlMnWJ4JYjmkXYkXu0+hW4YQNm0MTi2nP45Ps7uPLxV2gdXkZSHUa1PowgjGG7Ln2uI634OHigCS5KIqT1KsVO4UcJkVLnOslqCJJRhM025k5s48aPf+KHX+9gfWMTT58+hdGxCUqXwrJpZKYO31XRqMfgqqmLNA0w0WohrFSRNMYxNrNIqZsIKhM4/fwrOH/5a3z0zV18e/suLrx5CS+dW8fR5RMYm5xBklZRLOagynk0Kya4U6uz2Hj8CJ48s4Hx1jSG97fwwqsXYQd1xI02dr68iRu//IGrn9/Cz7//hevXP8XqykPYev0dzMwvQRQFDOb6IZVyGE/o//DFZx/G229s4tzZdcy1J7G5+RTe/+BDHJiaQnN4Bhfeu4krO9/h8tXPcOv2b3jtrXexuvYEtra3MffgCvb192FgYB9EYQChlQd3eCLE8fkRrC5O49hsCyvHF3Bs4QiWZ8cxMzpCc1mBF7TQbh3CY4+soRZWYZsOFh5oY35pgYS9uL/nPhRyveDzveDKtoj2kIejkzEODoWYGLYQhwLEXA6WJEAVcsjlCzQnAR79K9foN+vIAgKtSII+9PX1IN/fA36wB7Y8gL8BpDN91E20vasAAAAASUVORK5CYII=&#x27;);background-size:cover;display:block"></span>
+  <img class="gatsby-resp-image-image css-0" alt="The castle all lit up" title="The castle all lit up" src="/static/d95743b5437748d657f353cf849fe920/6a8a8/castle.png" srcSet="/static/d95743b5437748d657f353cf849fe920/5243c/castle.png 240w,/static/d95743b5437748d657f353cf849fe920/6a8a8/castle.png 400w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0" loading="lazy"/>
+    </span></p><p class="css-1bkk5q4">To make the price worth it, you may want to take advantage of everything the weekend has to offer.
+This includes all the character stops on the course. Where I went wrong during the half is I only stopped for 2 characters (more about this later).
+Because it was my first half, I didn&#x27;t want to stop too much but also later regretted not stopping for as many characters. I also know that if I stopped for more characters, I would&#x27;ve regretted stopping too much for my first half.
+If you think you&#x27;d probably struggle with this catch-22, it might be good to do the distance at a different race first so you feel more comfortable stopping for these photo opportunities.
+The high cost and amount of time spent trying to budget and plan could also add some unnecessary stress to the race, whereas if you stuck to something more local, you wouldn&#x27;t have to worry about this at all.</p><p class="css-1bkk5q4">Overall though, you will not regret doing a runDisney race and you will also not regret deciding to do a different race because at the end of the day, you will be so proud of yourself. And trust me, you will want to do more races anyway!</p><h3 class="css-170hkfz">Wait there&#x27;s more than one weekend? How do I choose?</h3><p class="css-1bkk5q4">Okay, so you read that first section and decided, yep, this is the race I&#x27;m doing, so you go to runDisney&#x27;s website and OMG... there are like a million race weekends (okay 4 weekends) to choose from. How do I decide?
+Let&#x27;s break these down...</p><style data-emotion-css="1pkeg2w">.css-1pkeg2w{font-family:inherit;font-weight:700;line-height:1.25;margin:0;margin-bottom:0.25rem;font-size:1rem;color:var(--theme-ui-colors-heading,#000);margin-top:1rem;}@media screen and (min-width:640px){.css-1pkeg2w{font-size:1.25rem;}}@media screen and (min-width:768px){.css-1pkeg2w{font-size:1.5rem;}}</style><h5 class="css-1pkeg2w">Walt Disney World Marathon Weekend</h5><style data-emotion-css="15rlv7r">.css-15rlv7r li{font-size:1rem;-webkit-letter-spacing:-0.003em;-moz-letter-spacing:-0.003em;-ms-letter-spacing:-0.003em;letter-spacing:-0.003em;line-height:1.625;--baseline-multiplier:0.179;--x-height-multiplier:0.35;}@media screen and (min-width:640px){.css-15rlv7r li{font-size:1rem;}}@media screen and (min-width:768px){.css-15rlv7r li{font-size:1.25rem;}}</style><ul class="css-15rlv7r"><li class="css-0"><strong class="css-0">When:</strong> It&#x27;s ALWAYS the weekend before MLK weekend, with the 5K on Thursday and the optional Castaway Cay Challenge on the following Tuesday (set sail Monday)</li><li class="css-0"><strong class="css-0">Distances:</strong> <ul class="css-15rlv7r"><li class="css-0">5K</li><li class="css-0">10K</li><li class="css-0">Half</li><li class="css-0">Full</li><li class="css-0">Half + Full (Goofy Challenge)</li><li class="css-0">5K + 10K + Half + Full (Dopey Challenge)</li><li class="css-0">Any of the previous races in the list + 5K on Castaway Cay (Castaway Cay Challenge)</li><li class="css-0">Kids 1 Mile Fun Run (Ages 4 - 13)</li><li class="css-0">Kids Dashes: 100 meter (Ages 1 - 4), 200m (Ages 5 - 8), 400m (Ages 7 - 8), Diaper Dash (Ages &lt;= 12 months)</li></ul></li><li class="css-0"><strong class="css-0">Price:</strong> Typically the least expensive for each individual race</li><li class="css-0"><strong class="css-0">Themes:</strong> Kids races are Chip and Dale, 5K is Pluto, 10K is Oswald, Half is Donald, Full is Mickey + Minnie, Goofy is Goofy, Dopey is Dopey. BUT in general people just dress in whatever Disney theme their heart desires.</li><li class="css-0"><strong class="css-0">Runs Through:</strong> <ul class="css-15rlv7r"><li class="css-0">Epcot (All)</li><li class="css-0">Magic Kingdom (Half, Full)</li><li class="css-0">Animal Kingdom (Full)</li><li class="css-0">Hollywood Studios (Full)</li></ul></li></ul><h5 class="css-1pkeg2w">Princess Half Marathon Weekend</h5><ul class="css-15rlv7r"><li class="css-0"><strong class="css-0">When:</strong> It&#x27;s almost always the last weekend of February.</li><li class="css-0"><strong class="css-0">Distances:</strong> <ul class="css-15rlv7r"><li class="css-0">5K</li><li class="css-0">10K</li><li class="css-0">Half</li><li class="css-0">10K + Half (Fairy Tale Challenge)</li><li class="css-0">Kids 1 Mile Fun Run (Ages 4 - 13)</li><li class="css-0">Kids Dashes: 100 meter (Ages 1 - 4), 200m (Ages 5 - 8), 400m (Ages 7 - 8), Diaper Dash (Ages &lt;= 12 months)</li></ul></li><li class="css-0"><strong class="css-0">Price:</strong> Typically the more expensive half marathon. For example, in 2020, the WDWMW Half was $188, while this one was $210.</li><li class="css-0"><strong class="css-0">Themes:</strong> Each race changes its theme every year, but it will be Disney Princess related for sure! Most people dress up in something princess-related, but like with every Disney race, you can dress in whichever theme you want!</li><li class="css-0"><strong class="css-0">Runs Through:</strong> <ul class="css-15rlv7r"><li class="css-0">Epcot (All)</li><li class="css-0">Magic Kingdom (Half)</li></ul></li></ul><h5 class="css-1pkeg2w">Wine and Dine Half Marathon Weekend</h5><ul class="css-15rlv7r"><li class="css-0"><strong class="css-0">When:</strong> It&#x27;s almost always the first full weekend of November when the time change happens.</li><li class="css-0"><strong class="css-0">Distances:</strong> <ul class="css-15rlv7r"><li class="css-0">5K</li><li class="css-0">10K</li><li class="css-0">Half</li><li class="css-0">10K + Half (Two Course Challenge)</li><li class="css-0">Kids 1 Mile Fun Run (Ages 4 - 13)</li><li class="css-0">Kids Dashes: 100 meter (Ages 1 - 4), 200m (Ages 5 - 8), 400m (Ages 7 - 8), Diaper Dash (Ages &lt;= 12 months)</li></ul></li><li class="css-0"><strong class="css-0">Price:</strong> Typically around the same price as Princess. However, your entry fee includes an after party.</li><li class="css-0"><strong class="css-0">Themes:</strong> Each race changes its theme every year, but it will be somewhat food related, like this past year&#x27;s &quot;Deliciously Wicked&quot; villain theme. People will dress up as any Disney theme they want, something to do with the theme for the medals, or something Epcot related in celebration of the Wine and Dine Festival.</li><li class="css-0"><strong class="css-0">Runs Through:</strong> <ul class="css-15rlv7r"><li class="css-0">Epcot (All)</li><li class="css-0">Animal Kingdom (Half)</li><li class="css-0">Hollywood Studios (Half)</li></ul></li></ul><h5 class="css-1pkeg2w">The Weekend Formerly Known as Star Wars Rival Run</h5><p class="css-1bkk5q4">This was a Star Wars themed weekend that took place around mid-April with half, virtual half, 10K, and 5K options. However, runDisney recently
+announced that they will be re-theming the entire weekend, so I don&#x27;t want to assume the information relevant to the Rival Run Weekend will carry over to whatever the new weekend is.</p><h5 class="css-1pkeg2w">Still don&#x27;t know what to choose?</h5><ul class="css-15rlv7r"><li class="css-0">Want to run a marathon? <em class="css-0">Marathon Weekend</em></li><li class="css-0">Want the cheapest option? <em class="css-0">Marathon Weekend</em></li><li class="css-0">Want a more atheltic vibe? <em class="css-0">Marathon Weekend</em></li><li class="css-0">Want to pair your vacation with a Disney Cruise? <em class="css-0">Marathon Weekend Castaway Cay Challenge</em></li><li class="css-0">Want to run through the castle? <em class="css-0">Marathon or Princess Weekend</em></li><li class="css-0">Want a more female-centric race? Girls weekend? <em class="css-0">Princess</em></li><li class="css-0">Obsessed with princesses? <em class="css-0">Princess</em> </li><li class="css-0">Want the best merch options? <em class="css-0">Princess</em></li><li class="css-0">Want the Half to be the main event? <em class="css-0">Princess, Wine and Dine, or whatever the new Star Wars weekend may be</em></li><li class="css-0">Want a more chill weekend? <em class="css-0">Wine and Dine</em></li><li class="css-0">Love the Wine and Dine Festival? <em class="css-0">Wine and Dine</em></li><li class="css-0">Want to go to a cool after party? <em class="css-0">Wine and Dine</em></li></ul><h3 class="css-170hkfz">I&#x27;ve chosen my weekend! Now how do I register for it?</h3><ul class="css-15rlv7r"><li class="css-0"><strong class="css-0">Create a runDisney account</strong> here: <a href="https://manage.rundisney.com/login/rundisney" class="css-1od09yo">https://manage.rundisney.com/login/rundisney</a>. If there is an error on the page, try refreshing or go to <a href="https://www.rundisney.com" class="css-1od09yo">https://www.rundisney.com</a> &gt; Click Help &amp; Support &gt; Click Manage Account.</li><li class="css-0"><strong class="css-0">Signup for e-mail updates</strong> from runDisney here: <a href="https://www.rundisney.com/email-signup/" class="css-1od09yo">https://www.rundisney.com/email-signup/</a>. Or follow on social media for updates.</li><li class="css-0"><strong class="css-0">Know when registration opens.</strong> Registration is typically at 10 AM EST. The following were the planned dates for general registration for the 2021 races and the 2020 Wine and Dine Weekend:<ul class="css-15rlv7r"><li class="css-0">Wine and Dine Half Marathon Weekend: March 10, 2020</li><li class="css-0">Marathon Weekend: May 12, 2020</li><li class="css-0">Princess Weekend: June 16, 2020</li><li class="css-0">Star Wars Weekend: August 11, 2020</li></ul></li><li class="css-0"><strong class="css-0">Want to register early?</strong> Those who are annual passholders, Disney Vacation Club members, Golden Oak residents, or Club 33 members get access to register for races early. When you sign up for a runDisney account, you can link it with whichever Disney account you have that stores this information, and I think it will just know.
+I wish I knew more, but because I don&#x27;t have any of these perks, I&#x27;m not going to speak on the experience. I do know that it&#x27;s always a few days before general registration and they only sell a limited number of registrations during this time. So if you miss out, you can still register later.</li><li class="css-0"><strong class="css-0">Want to register early but not one of the people listed above?</strong> You can use a travel agent to book your trip along with your bib and when general registration opens, you&#x27;ll receive a specific link to register for your bib. You can find travel agents in the <a href="https://www.facebook.com/groups/795310493890240/" class="css-1od09yo">runDisney Marketplace Facebook group</a> if you don&#x27;t have one you like to use.
+Also, Disney travel agents are free to use, so if someone is charging you for their services in addition to your trip, it&#x27;s probably a scam. </li><li class="css-0"><strong class="css-0">Didn&#x27;t get your registration early?</strong> No worries, you can sign up ON the day of general registration. When I registered for my half, it was about a month later and I don&#x27;t think it sold out until September. But, with COVID-19 causing runDisney events, as well as most other races, to go virtual, more people will be itching to register.
+Also, some years they can sell out super fast because it&#x27;s an anniversary year for the race or people love the theme. Basically, you just never know but it&#x27;s always best to assume it will sell out, so try to have a browser open on the registration page 5 minutes before registration opens. Don&#x27;t refresh the page!
+Personally, I try to have the web page open in different browsers (Chrome, Firefox, and Safari) and at least one on my phone. This came in handy registering for the runDisney Virtual Summer Series since I had a data blocker Chrome extension causing some issues on the checkout form, but the other browsers didn&#x27;t have that extension and therefore didn&#x27;t have that problem.</li><li class="css-0"><strong class="css-0">Paying with a gift card?</strong> You have to make sure it is all on one gift card AND that it covers the entire fee. So if you get some Disney gift cards you want to put them towards your race, go to <a href="https://www.disneygiftcard.com/" class="css-1od09yo">https://www.disneygiftcard.com/</a> to manage the amounts and put them on one card. I believe the service fee is around 6.6%, but definitely no more than that. No harm in putting more on the card, but you won&#x27;t be able to use it if you put less.</li><li class="css-0"><strong class="css-0">Still didn&#x27;t secure a registration or realized it just wasn&#x27;t in the budget?</strong> Sign up for the race with a &quot;charity bib.&quot; Each race has non-profits that runDisney gives bibs to. You can actually register through this non-profit, and instead of paying for the bib, you raise a certain amount of money for the charity. <a href="https://www.rundisney.com/events/disneyworld/travel-providers-charities/disneyworld-marathon-weekend/" class="css-1od09yo">You can find participating charities here, filtering by race weekend.</a></li></ul><h3 class="css-170hkfz">Registration complete! Wait where do I stay? Where should I get tickets?</h3><p class="css-1bkk5q4">So if you booked with a travel agent, you probably have a room booked on the resort property as a result.
+Otherwise, you may be asking yourself if it&#x27;s worth it to stay on property or not. I don&#x27;t know if I can make the call
+as to whether or not it&#x27;s worth it, but I can definitely say you don&#x27;t have to. And I think it really comes down to whether or not you have a car.</p><p class="css-1bkk5q4">Since we were able to drive to Disney, it was actually more expensive for us to stay on property because of the daily parking fees. Without a car,
+this isn&#x27;t something you have to worry about. Plus, the resorts have buses that take you to the race start. But, from other people&#x27;s experiences, IF you
+have a car available, it seems better to take it to the race start rather than use the provided transportation. I even know of some people who will use Uber
+because they leave before the buses even do! Gotta get those pre-race character photos! You also get free parking at Epcot since you park there before the park opens.</p><p class="css-1bkk5q4">Whether or not you stay on property, I think <a href="https://www.mousesavers.com/mousesavers-newsletter-signup/" class="css-1od09yo">the Mousesavers newsletter is very useful.</a>
+They are always sharing discounts for <a href="https://disneyspringshotels.com/our-7-hotels/" class="css-1od09yo">&quot;best friend hotels&quot;</a> that not only are at a reduced rate, but they also sometimes
+waive resort fees and parking fees. I believe some of these do actually have transportation to some of the races, but I&#x27;m not sure which ones. They do however all have easy access to Disney Springs,
+transportation to all Disney parks, extra magic hours, and 60 day fast pass reservations. So, you still get a lot of the perks you get staying on property, but less of a &quot;Disney&quot; feel.
+Our hotel did have Mickey waffles though!</p><p class="css-1bkk5q4">If you still would rather stay on property, the newsletter offers subscribers extra deals on <a href="https://www.undercovertourist.com/" class="css-1od09yo">Undercover Tourist</a>. They also have discounts on resort rooms sometimes as well! The only resort I&#x27;ve seen mixed opinions on for race transportation is Caribbean Beach, so that&#x27;s something to keep in mind.</p><p class="css-1bkk5q4">Undercover Tourist is also the only authorized seller of discounted Disney tickets, so look here for Disney tickets and even Universal Studios if that&#x27;s your jam.</p><h3 class="css-170hkfz">Should I go to the parks before, day of, and/or after the race?</h3><p class="css-1bkk5q4">Pretty much the answer to all these questions is &quot;it depends.&quot;
+If you are doing the 5K or 10K, I think for sure you should be able to hit the parks that day. You may be super tired after, but you should be finished in time to take a nap and go to the parks.
+For the half and the full, if this is your first time doing that distance, you should really clock how you feel after your longest run in training.
+My boyfriend did the marathon and hit the parks right after no problem. My friend and I went to Epcot and Magic Kingdom as soon as we finished the half.
+But, something you&#x27;ll learn about running is that everyone is different! </p><p class="css-1bkk5q4">For Goofy and Dopey, I can&#x27;t even imagine being jazzed enough to hit the parks. Even if you&#x27;re used to running those distances, getting up that early for multiple days is tiring.
+You may be able to get away with it with Goofy, but Dopey? Probably not... but again everyone is different!</p><h3 class="css-170hkfz">Should I run in costume?</h3><p class="css-1bkk5q4">Yes, but you don&#x27;t have to! If it&#x27;s going to stress you out to make something, don&#x27;t sweat it!
+There&#x27;s a Facebook group called <a href="https://www.facebook.com/groups/runDisneyrunMarketplace" class="css-1od09yo">runDisneyRun Marketplace</a> where lots of people sell both new and old costumes.
+Also, your costume doesn&#x27;t have to be exact. Lots of people do &quot;Disney Bounding&quot;, <a href="https://www.today.com/style/what-disneybounding-see-trend-loved-disney-enthusiasts-t136403#:~:text=%22It&#x27;s%20about%20using%20clothing%20items,%E2%80%94%20whatever%20that%20may%20be.%22" class="css-1od09yo">which according to this article is,</a>
+&quot;about using clothing items you find in your own closet or at your local mall to create an outfit based off your favorite Disney character ...
+It&#x27;s a subtle way to dress as your favorite character without being in costume while sporting your own personal style — whatever that may be.&quot;</p><p class="css-1bkk5q4">At the end of the day you won&#x27;t look weird if you run in costume and you won&#x27;t look weird if you don&#x27;t! I think it&#x27;s one of the most fun parts of the race, but races should be fun and if you&#x27;re someone who would stress about it, don&#x27;t!
+If you do have a costume, make sure you do a training run in it so you know how it feels to run in it.</p><h3 class="css-170hkfz">How fast do I need to be?</h3><p class="css-1bkk5q4">For the 5K you probably can&#x27;t take all day but there are people who have done it in 1.5 hours
+and were able to complete it and get their medals. Basically, the race just isn&#x27;t really timed, so there isn&#x27;t a cutoff like the other races.</p><p class="css-1bkk5q4">If you look at runDisney&#x27;s website, it will tell you that you need to maintain a 16:00 minute per mile pace
+for the 10K, Half, and Full. What it doesn&#x27;t tell you is that you must maintain a 16:00 minute per mile pace,
+starting from the last person to cross the start line. So, if you&#x27;re in an earlier corral, you can take a little bit longer.</p><p class="css-1bkk5q4">To help the racers figure out how they&#x27;re doing on pace, there are these people called &quot;The Balloon Ladies.&quot;
+These women start right after the last person crosses the start line and maintain that 16:00 min./mile pace
+the entire race. As long as you stay in front of them, you&#x27;re golden! They&#x27;re really nice and sometimes will allow people to share their bib
+numbers so you can track them during the race. </p><h3 class="css-170hkfz">What are character stops? Can I stop at all the characters? Should I get Photo Pass?</h3><p class="css-1bkk5q4">&quot;Character stops&quot; refer to points along the course where you can take pictures with different Disney characters.
+During the half last year I stopped to take pictures with only 2 charcters:</p><ol class="css-15rlv7r"><li class="css-0">Goofy who was wearing vacation clothes and in front of a yacht</li><li class="css-0">Stitch in his lai</li></ol><p class="css-1bkk5q4">For reference, I was in corral E. I definitely could&#x27;ve stopped for way more characters. In fact, I regret not stopping for more!
+My boyfriend did the marathon and was in corral in D. He stopped for so many characters due to the extreme heat and also dealing with an injury.
+He had a great time and isn&#x27;t even a Disney fan (Crazy... I know right?!).</p><div class="slider" tabindex="0" style="box-sizing:border-box;display:block;height:inherit;-moz-box-sizing:border-box;position:relative;width:100%"><div aria-live="polite" aria-atomic="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden" tabindex="-1">Slide 1 of 3</div><div class="slider-frame" style="box-sizing:border-box;display:block;height:100%;margin:0px;-moz-box-sizing:border-box;-ms-transform:translate(0, 0);overflow:hidden;padding:0;position:relative;touch-action:pinch-zoom pan-y;transform:translate3d(0, 0, 0);-webkit-transform:translate3d(0, 0, 0)"><ul class="slider-list" style="box-sizing:border-box;cursor:inherit;display:block;height:0;margin:0px 0px;padding:0;position:relative;-moz-box-sizing:border-box;-ms-transform:translate(0px, 0px);touch-action:pinch-zoom pan-y;transform:translate3d(0px, 0px, 0);-webkit-transform:translate3d(0px, 0px, 0);width:auto"><li class="slider-slide slide-visible slide-current" style="box-sizing:border-box;display:inline-block;height:auto;left:0;list-style-type:none;margin-bottom:auto;margin-left:0;margin-right:0;margin-top:auto;-moz-box-sizing:border-box;position:absolute;top:0;transform:scale(1);transition:transform .4s linear;vertical-align:top;width:0" tabindex="-1"><img alt="Eric with the Country Bears." src="/static/eric-country-bears-212d9ab9ec219cfc2270082cfca6098c.jpg" aria-hidden="false" tabindex="0"/></li><li class="slider-slide" style="box-sizing:border-box;display:inline-block;height:auto;left:0;list-style-type:none;margin-bottom:auto;margin-left:0;margin-right:0;margin-top:auto;-moz-box-sizing:border-box;position:absolute;top:0;transform:scale(1);transition:transform .4s linear;vertical-align:top;width:0" tabindex="-1"><img alt="Eric with a possum from Animal Kingdom." src="/static/eric-possum-26541506884e8e9c8e88b21dd857748c.jpg" aria-hidden="true"/></li><li class="slider-slide" style="box-sizing:border-box;display:inline-block;height:auto;left:0;list-style-type:none;margin-bottom:auto;margin-left:0;margin-right:0;margin-top:auto;-moz-box-sizing:border-box;position:absolute;top:0;transform:scale(1);transition:transform .4s linear;vertical-align:top;width:0" tabindex="-1"><img alt="Eric with Sebastian." src="/static/eric-sebastian-f3f457d8724dae2c71ad1d0c086fa4b1.jpg" aria-hidden="true"/></li></ul></div><div class="slider-control-centerleft" style="position:absolute;top:50%;left:0;transform:translateY(-50%);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%)"><button style="border:0;background:rgba(0,0,0,0.4);color:white;padding:10px;text-transform:uppercase;opacity:0.3;cursor:not-allowed" disabled="" aria-label="previous" type="button">Prev</button></div><div class="slider-control-centerright" style="position:absolute;top:50%;right:0;transform:translateY(-50%);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%)"><button style="border:0;background:rgba(0,0,0,0.4);color:white;padding:10px;text-transform:uppercase;opacity:0.3;cursor:not-allowed" disabled="" aria-label="next" type="button">Next</button></div><div class="slider-control-bottomcenter" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%)"><ul style="position:relative;top:-10px;display:flex;margin:0;padding:0;list-style-type:none"><li class="paging-item active"><button type="button" style="cursor:pointer;opacity:1;background:transparent;border:none;fill:black" aria-label="slide 1 bullet"><svg class="paging-dot" width="6" height="6"><circle cx="3" cy="3" r="3"></circle></svg></button></li><li class="paging-item"><button type="button" style="cursor:pointer;opacity:0.5;background:transparent;border:none;fill:black" aria-label="slide 2 bullet"><svg class="paging-dot" width="6" height="6"><circle cx="3" cy="3" r="3"></circle></svg></button></li><li class="paging-item"><button type="button" style="cursor:pointer;opacity:0.5;background:transparent;border:none;fill:black" aria-label="slide 3 bullet"><svg class="paging-dot" width="6" height="6"><circle cx="3" cy="3" r="3"></circle></svg></button></li></ul></div><style type="text/css">.slider-slide > img { width: 100%; display: block; }
+          .slider-slide > img:focus { margin: auto; }</style></div><p class="css-1bkk5q4">However, the later the corral you are in, the longer these character stop lines get, so you&#x27;ll have to limit the number. My friend started in H and she didn&#x27;t stop for any characters since the lines were so long.
+I would say ahead of time, pick out 3 characters where you think, &quot;okay if I see this character, I&#x27;m stopping&quot; or if you&#x27;re running with friends, each of you should have a figurative &quot;emergency character stop card&quot; that you can
+pull out when you see a certain character meaning you all HAVE to stop and take a picture. If you want to be even more conservative, limit yourself to only stopping when you see a character that fits with your costume theme. For
+example, stopping for the Queen of Hearts or Tweedle Dee and Tweedle Dum if you&#x27;re wearing an Alice in Wonderland costume. </p><p class="css-1bkk5q4">Just be mindful of your pace. Wear a GPS watch that tracks your pace if it helps or take the advice from the section prior and try to track the balloon ladies.
+I believe some of them are in the runDisneyRun Facebook group I mentioned and will happily share their bib numbers. Obviously, don&#x27;t be creepy and seek out the number if they aren&#x27;t willing to dole out that information themselves.</p><p class="css-1bkk5q4">In regards to PhotoPass, you don&#x27;t have to get it to get your character photos. You can hand your own phone to a cast member to take the picture.
+These don&#x27;t come out as good (see example below), so if you want really nice pictures, get the PhotoPass, especially if you expect to stop for lots of characters.
+If you see people in bright green tents, those are the race photographers and you can only get the photos they take of you if you have PhotoPass, so keep that in mind.</p><p class="css-1bkk5q4"><span class="gatsby-resp-image-wrapper" style="position:relative;display:block;margin-left:auto;margin-right:auto;max-width:400px">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom:100%;position:relative;bottom:0;left:0;background-image:url(&#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFcElEQVQ4yx2Ua1DUVRiH90sz4iWbUktpBFJTQHGBWC7LcvnDXvnvLpe9sReWJe4oJorlBSVSUEyQGPKSGKFljTdUGE1NEdFUJE0thLHI0picqaZmavr2dPTDO+fMe+Z93t/vzHmPYuSr49zvP8HowCnGLvcyNtgn9r2MXjrF/Ys9jHx9mu+313Pfk8c9v4Nv83MYsskMWvVcMEj0pSdzOElFd7SSjyIjUPxwpY8fr53mp6GzPLx5/lk8unOJR6NXGb9zkR9uX2R8VzO/+m2Ml3kYCTi57bJyLcdAv0nitJTMkaQ4umOU7H0KfCyKHt/+SsQFJu4O8OS7QYYO7OLGuncY39nCmMiPHvyQbq+b6xUBHpS5uRdwMGyXuSyA5zKS6VGr+DRWyb7FkQJYv56/Hw7z7y+3+Gt8iP8m7tLf2UZngoq+yjK2NjZQIlaVNocifxF7q8oY9NkZcWdzI1tPvy6FPk08h+Oi6YpaguLhvMUMr1tF78cfcOHTXRzbvYM9G97i8nuVHN3dRKpagzpZg2yyonV48JYtZ8DvYtSZxXCugcsCeFqj4sgbS+mOCEfxJFxJz+xQGuLj2dNQy/6aUgZiEnlgNXPGaOZAYy32PDPFy0rp6d3HcPNa7jrNjLhkvpElrug0fJkcx/HYKLptVhT/CGB/2ELq5sylWkCPvx3g91IvD2dHcm16KF11FZzrbedY1zqGzrawr6aKnz1WHjkN3DVLXE1P4Fx6IsdrKuhu3YJiIDiMmhdmYgqajnHSNFbGhbPfoWekuY0urZvM6Bgat9fS3LYJpyufpMQ0iuxuDnpd3MozcD1fONnZwLH97Rzc0YDiyKw52Cc/j37yNLRBArhkPn1RMXwn3t/Vnn1UlxVjqd+MsW4rvkJxHeZ0jAlJxKQasOhkOt9/j4snuunZ28qhtiYUJ18OxiVApqCpz6Ce51+k6ZUw1npSOVhiYeP6NXhaduDY1oK1diNXnBZ+Ew4ON65lff1avuhq59LRj+np/IBD7VtRPAiZT9tLs5CDpmAQUGnadBaGhRAaEkbInFdJtcgEOtqFyi2Yt7XRuGIFf/R28fPYoHBxkutnD3HuSCcnBPjzjmYUE6+9TseMWRgFUDd5KolTpqGOWIBbr8afmYDBpMPX1krWxs1YGrazonE7j3/5hokHV7l/8wy3Lh1jsPcAvQc6+KxdWJ4IWcCeF2dhmjQVj1Dnei6Ijrw0/jy1jf0FRjISVbi2NZG9uRlt+Ur8q+voOdrF4U9a2d26ica6t6gscuETk2POTEFxMzqa3a8vQJ45A+/cYKzBc6jRKLmxpZyFwcGEh4ahls2oTBYikyQM/koKK8vJ1ESTmaoiTR1LVMQ8lBHzWbpoHooNlU7cZg0a5SKhJor0tBjedWsZa63BHB9FWGgIkmxBmZRMeNRSoqUsnIEiAg4DdjkFizYRfUos6QlRpMaJ0Wte5aXapSMnVUlWfAQ6VTi7luXA+RZWm9VERkSQmWPDXVFFmpjZ8DfUWL0FVBZYKMzLwJklxlKKR6uORkpYKoArXGyuyGVNQMZtiCcrRUlbuYWj6wrRpohijw9zoAxHQQGLQucSJ+nxVS2j2GMhYNfizU7HZkzGKFRqk5Qo6stzWV9iZUN5DqsCWTh0cRjFgcdupkr8f/k+B77iAgpsmSgjF5JdWEL+8lrcfh8F2Wn4ciQ81nTMQqVeE4uitjCL1X4TtUXyM+ByjxaHKZmq0nxqSwTUo6PElUFpvg6/LQObVcLvy6XEK4u8yOVKuC0p2A1qzBnxKKrztVQ4JAHSUe3Ts9yrF2DRoFh+BlxVbGHlmxaW+UWzQplqIaDkaY3PRKWIN52Z4i4l7EY1NgH9HyP2hLglvtGXAAAAAElFTkSuQmCC&#x27;);background-size:cover;display:block"></span>
+  <img class="gatsby-resp-image-image css-0" alt="A blurry photo of me and Stitch" title="A blurry photo of me and Stitch" src="/static/dffd790501c2d943e03e28cd7b681b9d/6a8a8/stitch.png" srcSet="/static/dffd790501c2d943e03e28cd7b681b9d/5243c/stitch.png 240w,/static/dffd790501c2d943e03e28cd7b681b9d/6a8a8/stitch.png 400w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0" loading="lazy"/>
+    </span></p><h3 class="css-170hkfz">How do I stay motivated during training?</h3><ol class="css-15rlv7r"><li class="css-0">Something that got me pumped for my runDisney race is having a Disney playlist that I would break out during my runs when I was struggling.
+It helped me visualize the course and convert my pain from running into excitement. </li></ol><iframe src="https://open.spotify.com/embed/playlist/1rogdZEqf2m0xUMvAkbOIK" style="display:block;margin:auto" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe><ol start="2" class="css-15rlv7r"><li class="css-0"><p class="css-1bkk5q4">Speaking of visualizing the course, there are tons of YouTube videos of runDisney race recaps! My favorites are
+Joyful Miles and RunningInMakeup. There are several others that you can check out in the next section. </p></li><li class="css-0"><p class="css-1bkk5q4">Build a vision board. I didn&#x27;t do this for my runDisney half marathon, but I did so for my first marathon, and it helped immensely. </p></li></ol><p class="css-1bkk5q4"><span class="gatsby-resp-image-wrapper" style="position:relative;display:block;margin-left:auto;margin-right:auto;max-width:960px">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom:77.91666666666667%;position:relative;bottom:0;left:0;background-image:url(&#x27;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwABBP/EABQBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAATUegMLYP//EABgQAQEBAQEAAAAAAAAAAAAAAAERAAIh/9oACAEBAAEFAquiHXqcxpIG/8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8Bp//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABwQAAEEAwEAAAAAAAAAAAAAAAARITFxATJRgf/aAAgBAQAGPwJkpDTHpyiSRj//xAAbEAACAwEBAQAAAAAAAAAAAAAAAREhMWFRcf/aAAgBAQABPyFa7XEArRvUEsrhCzkr8ZkcvqMDSf/aAAwDAQACAAMAAAAQG+//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8Q1QmX/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARQf/aAAgBAgEBPxBzkjt//8QAHRABAQACAgMBAAAAAAAAAAAAAREAITFBUWFxof/aAAgBAQABPxBGtPZD3+YXIxYI5pnFGAMOWWAG71wZZD1kQ+9ZAJEvnef/2Q==&#x27;);background-size:cover;display:block"></span>
+  <img class="gatsby-resp-image-image css-0" alt="My vision board I made for the marathon" title="My vision board I made for the marathon" src="/static/bc7ec5a86dc89c4921c401c2efc70f8f/18e3b/visionboard.jpg" srcSet="/static/bc7ec5a86dc89c4921c401c2efc70f8f/46946/visionboard.jpg 240w,/static/bc7ec5a86dc89c4921c401c2efc70f8f/55489/visionboard.jpg 480w,/static/bc7ec5a86dc89c4921c401c2efc70f8f/18e3b/visionboard.jpg 960w,/static/bc7ec5a86dc89c4921c401c2efc70f8f/60e21/visionboard.jpg 1440w,/static/bc7ec5a86dc89c4921c401c2efc70f8f/69b48/visionboard.jpg 1920w,/static/bc7ec5a86dc89c4921c401c2efc70f8f/3a7ee/visionboard.jpg 3881w" sizes="(max-width: 960px) 100vw, 960px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0" loading="lazy"/>
+    </span></p><ol start="4" class="css-15rlv7r"><li class="css-0">Come up with a list of Disney movies to watch in the days leading up to the race. Not only does it get you excited for your trip, but
+you&#x27;ll have more time on your hands since you&#x27;ll be tapering the closer you are to race day.</li></ol><h3 class="css-170hkfz">Still really nervous about all these pre-race decisions? Want some good runDisney social media to check out?</h3><p class="css-1bkk5q4">Time to plug some of my favorite runDisney vlogs, podcasts, etc. that helped me with all my decision making:</p><ol class="css-15rlv7r"><li class="css-0"><a href="https://www.facebook.com/groups/1413755672283628" class="css-1od09yo">The runDisneyRun Facebook Group</a></li><li class="css-0"><a href="http://joyfulmiles.com/" class="css-1od09yo">Joyful Miles!</a> Also check out their YouTube channel, podcast, and Facebook group!</li><li class="css-0"><a href="https://www.youtube.com/channel/UCSunzTicx9FqaNm30-j6LPA" class="css-1od09yo">RunningInMakeup</a> is a great YouTube channel for getting hyped about Disney races and training. She doesn&#x27;t really do advice videos, but I really like her vlog style. </li><li class="css-0"><a href="https://www.youtube.com/channel/UCcQsx8VPeEZ9dmXrQrur2UA" class="css-1od09yo">Medals &amp; Tiaras</a> has some great advice and she actually just started a Running 101 video series. </li></ol><h3 class="css-170hkfz">Thank you</h3><p class="css-1bkk5q4">Thanks for taking the time to read this! Hopefully, it was helpful in helping you prepare for your first runDisney experience! Keep it up with the training and good luck with your race!</p></section></div><style data-emotion-css="6x8z6y">.css-6x8z6y{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin-top:8rem;color:var(--theme-ui-colors-secondary,#5f6c80);-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;border-top-style:solid;border-top-width:1px;border-top-color:var(--theme-ui-colors-divide,#cbd5e0);padding-top:1rem;}.css-6x8z6y a{color:var(--theme-ui-colors-secondary,#5f6c80);-webkit-text-decoration:none;text-decoration:none;}.css-6x8z6y a:hover{color:var(--theme-ui-colors-heading,#000);-webkit-text-decoration:underline;text-decoration:underline;}.css-6x8z6y a:focus{color:var(--theme-ui-colors-heading,#000);}@media screen and (min-width:640px){.css-6x8z6y{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}}@media screen and (min-width:768px){.css-6x8z6y{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}</style><footer class="css-6x8z6y"><div>© <!-- -->2021<!-- --> by <!-- -->Elaina<!-- -->. All rights reserved.</div><div><a aria-label="Link to the theme&#x27;s GitHub repository" href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-minimal-blog" class="css-688a3f">Theme</a> <!-- -->by<!-- --> <a aria-label="Link to the theme author&#x27;s website" href="https://www.lekoarts.de/en" class="css-688a3f">LekoArts</a></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/running/runDisney";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-426ffcbd04e2e6941d73.js"],"app":["/app-67010791c2e5be47a288.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-f3d0a21fe8149f33caf4.js"],"component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-blog-query-tsx":["/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-blog-query-tsx-06c2bdf6a795d8c5513a.js"],"component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-homepage-query-tsx":["/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-homepage-query-tsx-a12a2a03972c62312c33.js"],"component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-page-query-tsx":["/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-page-query-tsx-88c48375747da351f32e.js"],"component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx":["/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-13ffe4cb75f059d7fae4.js"],"component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx":["/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-45dbd1b3f707a6f48198.js"],"component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx":["/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx-a356273d6c044b389045.js"]};/*]]>*/</script><script src="/polyfill-426ffcbd04e2e6941d73.js" nomodule=""></script><script src="/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-13ffe4cb75f059d7fae4.js" async=""></script><script src="/aed2e917f30c051bccba91aa15989a75fd0bd633-bf2b2cfa54bfbe3e54be.js" async=""></script><script src="/styles-c2fe8482057191dca484.js" async=""></script><script src="/app-67010791c2e5be47a288.js" async=""></script><script src="/cb1608f2-8e1448abb65b3325a332.js" async=""></script><script src="/framework-0844017b59162e95f371.js" async=""></script><script src="/webpack-runtime-e62870308bfeb59cefff.js" async=""></script></body></html>

@@ -10,8 +10,8 @@ module.exports = {
     author: `Elaina Cole`,
     siteDescription: `A blog about Elaina's adventures`,
     siteTitle: `Elaina`,
-    siteTitleAlt: `Elaina - Melted Boundary`,
-    siteUrl: `http://melted-boundary.surge.sh`
+    siteTitleAlt: `Elaina - ArRay of Light`,
+    siteUrl: `https://arrayoflight.gatsbyjs.io/`
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
@@ -54,8 +54,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Elaina - melted-boundary`,
-        short_name: `melted-boundary`,
+        name: `Elaina - array-of-light`,
+        short_name: `array-of-light`,
         description: `A blog about Elaina's adventures.`,
         start_url: `/`,
         background_color: `#fff`,

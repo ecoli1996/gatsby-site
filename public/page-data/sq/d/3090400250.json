@@ -1,0 +1,1 @@
+{"data":{"minimalBlogConfig":{"basePath":"/","blogPath":"/blog","postsPath":"content/posts","pagesPath":"content/pages","tagsPath":"/tags","externalLinks":[{"name":"GitHub","url":"https://github.com/ecoli1996"}],"navigation":[{"title":"Blog","slug":"/tags"},{"title":"About","slug":"/about"}],"showLineNumbers":true,"showCopyButton":true}}}

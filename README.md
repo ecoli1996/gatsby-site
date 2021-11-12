@@ -16,5 +16,5 @@ Typography driven, feature-rich blogging theme with minimal aesthetics. Includes
 
 Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de)
 
-<h1>To visit the actual blog, go to <a href="melted-boundary.surge.sh">melted-boundary.surge.sh</a></h1>
+<h1>To visit the actual blog, go to <a href="https://arrayoflight.gatsbyjs.io/">https://arrayoflight.gatsbyjs.io/</a></h1>
 
