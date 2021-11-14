@@ -1,15 +1,13 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 
 function Avatar(props) {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "avatar.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500, maxHeight: 500) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 500, height: 500)
         }
       }
     }
@@ -21,6 +19,6 @@ function Avatar(props) {
     borderRadius: "50%",
     marginRight: "15px"
   };
-  return <Img style={styles} fluid={data.placeholderImage.childImageSharp.fluid} alt={altText} title={title} />;
+  return <GatsbyImage style={styles} image={data.placeholderImage.childImageSharp.gatsbyImageData} alt={altText} title={title} />;
 }
 export default Avatar;

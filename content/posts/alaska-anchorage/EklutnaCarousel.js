@@ -1,14 +1,14 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import eklutna_1 from './aug28/eklutna-1.jpg'
+import eklutna_2 from './aug28/eklutna-2.jpg'
 
 function EklutnaCarousel() {
-  const eklutna_1 = require('./aug28/eklutna-1.jpg');
-  const eklutna_2 = require('./aug28/eklutna-2.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="A Orthodox Christian Cross."
           src={eklutna_1} />

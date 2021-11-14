@@ -1,10 +1,10 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import mochi from './mochi.jpg'
+import castella from './castella.jpg'
+import sake from './nigori-sake.jpg'
 
 function DessertAndSakeCarousel() {
-  const mochi = require('./mochi.jpg');
-  const castella = require('./castella.jpg');
-  const sake = require('./nigori-sake.jpg');
   const props = {
     enableKeyboardControls: true,
     dragging: true,

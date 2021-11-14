@@ -1,5 +1,5 @@
 require(`dotenv`).config({
-  path: `.env`,
+  path: `.env.${process.env.NODE_ENV}`,
 })
 const path = require(`path`)
 
@@ -13,8 +13,16 @@ module.exports = {
     siteTitleAlt: `Elaina - ArRay of Light`,
     siteUrl: `https://arrayoflight.gatsbyjs.io/`
   },
+  flags: {
+    THE_FLAG: false,
+    FAST_DEV: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PARALLEL_SOURCING: true,
+    LMDB_STORE: true,
+    DEV_SSR: true
+  },
   plugins: [
-    `gatsby-plugin-fontawesome-css`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
+    `gatsby-plugin-fontawesome-css`, `gatsby-plugin-image`, `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

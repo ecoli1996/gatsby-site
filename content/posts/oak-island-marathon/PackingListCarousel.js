@@ -1,15 +1,14 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import myList from './elaina-packing.jpg'
+import ericList from './eric-packing.jpg'
 
 function PackingListCarousel() {
-  const myList = require('./elaina-packing.jpg');
-  const ericList = require('./eric-packing.jpg');
-  
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="My marathon packing list. It's just a basic list with checkboxes."
           src={myList}/>

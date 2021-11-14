@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import castle from './castle.png'
+import goofy from './goofy.png'
+import stitch from './stitch.png'
 
 function WDWCarouselScenery() {
-  const castle = require('./castle.png');
-  const goofy = require('./goofy.png');
-  const stitch = require('./stitch.png');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="Cinderella's castle at night covered with light blue string lights"
           src={castle}/>

@@ -1,15 +1,14 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import flat from './flat-photo.jpg'
+import flatZoom from './flat-zoom.jpg'
 
 function FlatCarousel() {
-  const flat = require('./flat-photo.jpg');
-  const flatZoom = require('./flat-zoom.jpg');
-  
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="My flat racing clothes zoomed out"
           src={flat}/>

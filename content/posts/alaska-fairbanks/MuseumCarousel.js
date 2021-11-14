@@ -1,17 +1,17 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import mon_1 from './mon-1.jpg'
+import mon_2 from './mon-2.jpg'
+import mon_3 from './mon-3.jpg'
+import mon_4 from './mon-4.jpg'
 
 function MuseumCarousel() {
-  const mon_1 = require('./mon-1.jpg');
-  const mon_2 = require('./mon-2.jpg');
-  const mon_3 = require('./mon-3.jpg');
-  const mon_4 = require('./mon-4.jpg');
 
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="A mummified steppe bison."
           src={mon_1} />

@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import triplelakes_1 from './triplelakes-1.jpg'
+import triplelakes_2 from './triplelakes-2.jpg'
+import triplelakes_3 from './triplelakes-3.jpg'
 
 function TripleLakesCarousel() {
-  const triplelakes_1 = require('./triplelakes-1.jpg');
-  const triplelakes_2 = require('./triplelakes-2.jpg');
-  const triplelakes_3 = require('./triplelakes-3.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="A view of one of the lakes from a high point of elevation."
           src={triplelakes_1} />

@@ -1,17 +1,17 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import medalClosed from './medal-1.jpg'
+import medalOpen from './medal-2.jpg'
+import jacketFront from './jacket-1.jpg'
+import jacketBack from './jacket-2.jpg'
 
 function OakSwagCarousel() {
-  const medalClosed = require('./medal-1.jpg');
-  const medalOpen = require('./medal-2.jpg');
-  const jacketFront = require('./jacket-1.jpg');
-  const jacketBack = require('./jacket-2.jpg')
   
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="The medal. A sea turtle engraved with Oak Island Marathon 26.2 and sea creatures."
           src={medalClosed}/>

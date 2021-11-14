@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import aug28_1 from './aug28/aug28-1.jpg'
+import aug28_2 from './aug28/aug28-2.jpg'
+import aug28_3 from './aug28/aug28-3.jpg'
 
 function Aug28Carousel() {
-  const aug28_1 = require('./aug28/aug28-1.jpg');
-  const aug28_2 = require('./aug28/aug28-2.jpg');
-  const aug28_3 = require('./aug28/aug28-3.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="The Matanuska Glacier."
           src={aug28_1} />

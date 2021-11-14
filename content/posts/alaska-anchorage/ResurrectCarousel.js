@@ -1,14 +1,14 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import resurrect from './aug27/resurrect.jpg'
+import mable from './aug27/mabel-bean.jpg'
 
 function ResurrectCarousel() {
-  const resurrect = require('./aug27/resurrect.jpg');
-  const mable = require('./aug27/mabel-bean.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="Beautiful chapel turned coffee shop."
           src={resurrect} />

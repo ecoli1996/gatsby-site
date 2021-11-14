@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import dogStatue from './juneau-statue-1.jpg'
+import bearStatue from './juneau-statue-2.jpg'
+import gnomes from './gnomes.jpg'
 
 function JuneauCarousel() {
-  const dogStatue = require('./juneau-statue-1.jpg');
-  const bearStatue = require('./juneau-statue-2.jpg');
-  const gnomes = require('./gnomes.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="Eric next to a dog statue."
           src={dogStatue} />

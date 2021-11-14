@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import double_musky_1 from './aug27/double-musky-food-1.jpg'
+import double_musky_2 from './aug27/double-musky-food-2.jpg'
+import double_musky_3 from './aug27/double-musky-food-3.jpg'
 
 function DoubleMuskyCarousel() {
-  const double_musky_1 = require('./aug27/double-musky-food-1.jpg');
-  const double_musky_2 = require('./aug27/double-musky-food-2.jpg');
-  const double_musky_3 = require('./aug27/double-musky-food-3.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="Trees on the Winner Creek Trail with the sunlight peeking through."
           src={double_musky_2} />
