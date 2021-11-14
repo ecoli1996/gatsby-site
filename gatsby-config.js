@@ -14,7 +14,6 @@ module.exports = {
     siteUrl: `https://arrayoflight.gatsbyjs.io/`
   },
   flags: {
-    THE_FLAG: false,
     FAST_DEV: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true,
