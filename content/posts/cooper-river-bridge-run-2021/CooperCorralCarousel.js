@@ -16,9 +16,9 @@ function CooperCorralCarousel() {
     };
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true"
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}
       style={styles}>
         <video controls>
             <source src={Video1} type="video/mp4" />

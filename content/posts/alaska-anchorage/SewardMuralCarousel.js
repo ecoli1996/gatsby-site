@@ -1,16 +1,16 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import mural_1 from './aug27/mural-1.jpg'
+import mural_2 from './aug27/mural-2.jpg'
+import mural_3 from './aug27/mural-3.jpg'
+import mural_4 from './aug27/mural-4.jpg'
 
 function SewardMuralCarousel() {
-  const mural_1 = require('./aug27/mural-1.jpg');
-  const mural_2 = require('./aug27/mural-2.jpg');
-  const mural_3 = require('./aug27/mural-3.jpg');
-  const mural_4 = require('./aug27/mural-4.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="A mural of a dog sled."
           src={mural_2} />

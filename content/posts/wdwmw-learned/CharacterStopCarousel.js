@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import bears from './eric-country-bears.jpg'
+import possum from './eric-possum.jpg'
+import sebastian from './eric-sebastian.jpg'
 
 function CharacterStopCarousel() {
-  const bears = require('./eric-country-bears.jpg');
-  const possum = require('./eric-possum.jpg');
-  const sebastian = require('./eric-sebastian.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="Eric with the Country Bears."
           src={bears}/>

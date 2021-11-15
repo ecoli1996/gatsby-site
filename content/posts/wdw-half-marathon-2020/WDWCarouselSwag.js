@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import medal from './medal-close.jpeg'
+import shirt from './shirt.jpeg'
+import lanyard from './medal-full.jpeg'
 
 function WDWCarouselSwag() {
-  const medal = require('./medal-close.jpeg');
-  const shirt = require('./shirt.jpeg');
-  const lanyard = require('./medal-full.jpeg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="Closeup of the medal. It shows a gold medal with Donalad Duck wunning in navy blue shirt and light blue shorts."
           src={medal}/>

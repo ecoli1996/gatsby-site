@@ -1,16 +1,16 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import photoPassTrail from './mendenhall-1.jpg'
+import eastGlacierLoop from './mendenhall-2.jpg'
+import glacier from './mendenhall-3.jpg'
+import waterfall from './waterfall-pic.jpg'
 
 function MendenhallCarousel() {
-  const photoPassTrail = require('./mendenhall-1.jpg');
-  const eastGlacierLoop = require('./mendenhall-2.jpg');
-  const glacier = require('./mendenhall-3.jpg');
-  const waterfall = require('./waterfall-pic.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="Eric next to a giant waterfall."
           src={waterfall} />

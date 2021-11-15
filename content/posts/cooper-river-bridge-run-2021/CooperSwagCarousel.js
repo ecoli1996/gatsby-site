@@ -1,14 +1,14 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import swag1 from './medal.jpg'
+import swag2 from './shirt.jpg'
 
 function CooperSwagCarousel() {
-  const swag1 = require('./medal.jpg');
-  const swag2 = require('./shirt.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="A medal with a butterfly flying over white and yellow flowers overlaying the Cooper River Bridge."
           src={swag1} />

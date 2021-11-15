@@ -1,17 +1,17 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import matanuska_1 from './aug28/matanuska-1.jpg'
+import matanuska_2 from './aug28/matanuska-2.jpg'
+import matanuska_3 from './aug28/matanuska-3.jpg'
+import matanuska_4 from './aug28/matanuska-4.jpg'
+import matanuska_5 from './aug28/matanuska-5.jpg'
 
 function MatanuskaCarousel() {
-  const matanuska_1 = require('./aug28/matanuska-1.jpg');
-  const matanuska_2 = require('./aug28/matanuska-2.jpg');
-  const matanuska_3 = require('./aug28/matanuska-3.jpg');
-  const matanuska_4 = require('./aug28/matanuska-4.jpg');
-  const matanuska_5 = require('./aug28/matanuska-5.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="A view of the matanuska glacier."
           src={matanuska_1} />

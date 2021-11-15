@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import driftwood_1 from './driftwood-1.jpg'
+import driftwood_2 from './driftwood-2.jpg'
+import driftwood_3 from './driftwood-3.jpg'
 
 function DriftwoodCarousel() {
-  const driftwood_1 = require('./driftwood-1.jpg');
-  const driftwood_2 = require('./driftwood-2.jpg');
-  const driftwood_3 = require('./driftwood-3.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="Hazy outdoor view from the Driftwood Lodge."
           src={driftwood_1} />

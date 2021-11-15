@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import medal from './medal-close.jpeg'
+import hoodie from './hoodie.jpeg'
+import lanyard from './medal-lanyard.jpeg'
 
 function CharliePostCarousel() {
-  const medal = require('./medal-close.jpeg');
-  const hoodie = require('./hoodie.jpeg');
-  const lanyard = require('./medal-lanyard.jpeg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="Closeup of the medal. It shows a teal and yellow medal with the words Charlie Post Classic engraved overlaying a lighthouse."
           src={medal} />

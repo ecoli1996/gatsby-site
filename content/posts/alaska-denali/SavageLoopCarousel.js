@@ -1,15 +1,15 @@
 import React from "react"
 import Carousel from 'nuka-carousel/index'
+import savage_1 from './savage-1.jpg'
+import savage_2 from './savage-2.jpg'
+import savage_3 from './savage-3.jpg'
 
 function SavageLoopCarousel() {
-  const savage_1 = require('./savage-1.jpg');
-  const savage_2 = require('./savage-2.jpg');
-  const savage_3 = require('./savage-3.jpg');
   return (
     <Carousel
-      enableKeyboardControls="true"
-      dragging="true"
-      swiping="true">
+      enableKeyboardControls={true}
+      dragging={true}
+      swiping={true}>
         <img
           alt="A swampy section of the loop."
           src={savage_1} />
