@@ -65,7 +65,6 @@ module.exports = {
           head: true,
           respectDNT: true,
           exclude: ["/preview/**"],
-          origin: "https://arrayoflight.gatsbyjs.io",
         }
       },
     },
