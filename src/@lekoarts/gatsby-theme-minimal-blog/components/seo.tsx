@@ -1,5 +1,5 @@
 import React from "react"
-import { Helmet } from "react-helmet"
+import Helmet from 'react-helmet';
 import { withPrefix } from "gatsby"
 import useSiteMetadata from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata"
 
@@ -33,7 +33,7 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
   return (
     <Helmet title={title} defaultTitle={defaultTitle} titleTemplate={`%s | ${siteTitle}`}>
       <html lang={siteLanguage} />
-      <meta name="google-site-verification" content="9yjcD4nX0hOnqGOz_49qqNPLsE1TS5-DdGjZdFK9thI" />
+      <meta name="google-site-verification" content="sBv8QovY8cRsKuaUQz6fd10AUk16o6" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta property="og:title" content={seo.title} />
